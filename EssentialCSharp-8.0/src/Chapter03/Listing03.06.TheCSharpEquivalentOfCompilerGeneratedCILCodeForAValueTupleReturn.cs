@@ -1,11 +1,18 @@
 namespace AddisonWesley.Michaelis.EssentialCSharp.Chapter03.Listing03_06
 {
-    namespace Chapter03
+        public class Program
     {
-        [return: System.Runtime.CompilerServices.TupleElementNames(new string[] { "First", "Second" })]
-        public System.ValueTuple<string, string> ParseNames(string fullName)
+        public static void Main()
+
         {
-            // ...
+            (string First, string Second, String Third) namedFruits = ("apple", "orange", "banana");
+
+            var namedFruits2 = ("Apples", "orange", "etc"...);
+
+            namedFruits.First = "Eat";
+
+            
+           
         }
 
     }

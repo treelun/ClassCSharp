@@ -9,3 +9,5 @@ namespace AddisonWesley.Michaelis.EssentialCSharp.Chapter02.Listing02_24
         }
     }
 }
+//암시적 형변환
+//앞의 캐스팅과 비슷

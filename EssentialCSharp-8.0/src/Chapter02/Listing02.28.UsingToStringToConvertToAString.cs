@@ -11,3 +11,7 @@ namespace AddisonWesley.Michaelis.EssentialCSharp.Chapter02.Listing02_28
         }
     }
 }
+
+//bool
+
+//True or False를 나타낸다.
