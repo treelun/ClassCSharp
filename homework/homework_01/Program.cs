@@ -27,7 +27,7 @@ namespace homework_01
                 Console.WriteLine($"the string is \n{input1}, {input2}");
                 Console.WriteLine("the string is \n{0}, {1}", input1, input2);
                 Console.WriteLine(input3);
-                Console.WriteLine("the string is \nHellow, My name is Seungho Yu");
+                Console.WriteLine("the string is \n{1}, {0}", input2, input1);
 
 
             }
