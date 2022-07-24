@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace mygame
 {
-    class Monster
+    class Monster : LifeEntity
+
     {
+
+        public override void Init()
+        {
+            attackDamage = 3;
+            Hp = 50;
+            name = "몬스터";
+        }
+    
+
+        
     }
 }

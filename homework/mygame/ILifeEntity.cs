@@ -10,5 +10,9 @@ namespace mygame
     {
         void Attack(LifeEntity lifeEntity);
         void hit(int hitpoint);
+
+        void defence(LifeEntity lifeEntity);
+
+
     }
 }

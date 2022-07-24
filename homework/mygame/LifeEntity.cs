@@ -6,24 +6,13 @@ using System.Threading.Tasks;
 
 namespace mygame
 {
-    class LifeEntity:ILifeEntity
+    class LifeEntity : ILifeEntity
 
     {
-        protected int attackDamage = 10;
-        protected int _Hp = 100;
+        protected int attackDamage;
+        protected int Hp;
 
-        public int Hp
-        {
-            get
-            {
-                return Hp;
 
-            }
-            protected set
-            {
-                Hp = value;
-            }
-        }
 
         public string name = "";
 
@@ -34,14 +23,29 @@ namespace mygame
 
         public virtual void Attack(LifeEntity lifeEntity)
         {
-            lifeEntity.Attack(lifeEntity);
-            Console.WriteLine("");
-                
+
+            Console.WriteLine(name + "은" + lifeEntity.name + "을(를) 공격했다");
+
+            lifeEntity.hit(attackDamage);
+
+
         }
 
         public void hit(int hitpoint)
         {
-            throw new NotImplementedException();
+
+            Hp -= hitpoint;
+
+            Console.WriteLine(name + "은(는) 공격받았다.");
+            Console.WriteLine(name + "은" + Hp + "의 Hp가 남았다.");
         }
+
+        public virtual void defence(LifeEntity lifeEntity)
+        {
+            Console.WriteLine(name + "은" + lifeEntity.name + "의 공격을 막아냈다.");
+
+        }
+
+
     }
 }

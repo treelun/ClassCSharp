@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mygame
+namespace ConsoleApp2
 {
-    class Ghost : Monster
-    {
-        
+    class MainCharacter : LifeEntity
 
+    {
         public override void Init()
         {
             base.Init();
-            name = "Ghost";
-            attackDamage = 4;
+            name = "주인공";
+            HP = 100;
+            attackPoint = attackPoint;
+            ammorPoint = 0;
         }
     }
 }

@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace mygame
 {
-    class Zombie
+    class Zombie : Monster
     {
+    
+
+        public override void Init()
+        {
+            base.Init();
+            name = "Zombie";
+            attackDamage = 5;
+        }
+
     }
 }

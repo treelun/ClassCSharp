@@ -4,17 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mygame
+namespace ConsoleApp2
 {
     class Ghost : Monster
     {
-        
-
         public override void Init()
         {
             base.Init();
             name = "Ghost";
-            attackDamage = 4;
         }
     }
 }

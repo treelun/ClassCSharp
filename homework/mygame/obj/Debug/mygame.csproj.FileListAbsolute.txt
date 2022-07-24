@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\obj\Debug\mygame.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\obj\Debug\mygame.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\bin\Debug\mygame.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\bin\Debug\mygame.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\bin\Debug\mygame.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\obj\Debug\mygame.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\mygame\obj\Debug\mygame.pdb
