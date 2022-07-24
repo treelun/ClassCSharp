@@ -21,14 +21,14 @@ namespace AddisonWesley.Michaelis.EssentialCSharp.Chapter06.Listing06_17
 
     class Employee
     {
-        // FirstName property
+        // FirstName property(프로퍼티형식)
         public string FirstName
         {
-            get
+            get//(가져옴)
             {
                 return _FirstName;
             }
-            set
+            set//(입력함)
             {
                 _FirstName = value;
             }

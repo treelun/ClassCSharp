@@ -18,6 +18,7 @@ namespace AddisonWesley.Michaelis.EssentialCSharp.Chapter06.Listing06_10
         // Caution:  Parameter names use PascalCase
         public void SetName(string FirstName, string LastName)
         {
+            //필드에 있는 firstname과 매개변수의 이름이 같음. 모호함을 없애고자 this를 사용함
             this.FirstName = FirstName;
             this.LastName = LastName;
         }

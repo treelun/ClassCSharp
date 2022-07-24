@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\bin\Debug\445.exe.config
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\bin\Debug\445.exe
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\bin\Debug\445.pdb
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.exe
+C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.pdb
