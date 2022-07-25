@@ -1,0 +1,135 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace homework_2week
+{
+    class Program
+    {
+        /*숙제입니다! 기간은 7월 27일(수요일) 밤 9시 까지입니다!
+
+            계산기를 만들어 주시면됩니다!
+
+            1.1번 값을 받고
+            2. 타입을 받고(덧,뺄,곱,나누)
+            3. 2번값을 받으면
+            4. 결과를 보여줍니다!
+            5. 계속할 것인지 알려주고
+            6. 계속한다면 2번으로 돌아갑니다!
+            6-1 이때, 1번값은 4번에서 나왔던 결과값입니다!
+            (예시, 1+2=3 계속? 네! *2 = 6  같은 방식)
+
+            즉, (1번) 타입 (2번) = (결과)
+            (결과) 타입 (2번) = (결과2)
+            (결과2) 타입 (2번) = (결과3) ...
+
+            같은 방식입니다!
+
+            저는 while문과 switch문, if 와 else if, continue 와 break, return을 모두 사용했습니다!
+            화이팅입니다!3
+        */
+        static void Main(string[] args)
+        {
+            {
+                int num1 = 0, num2 = 0, total = 0, contotal = 0;
+                char op = ' ', Continue = ' ';
+                
+                string result = "";
+
+
+
+                Console.Write("input1 : ");
+                num1 = int.Parse(Console.ReadLine());
+                Console.Write($"insert type : ");
+                op = Console.ReadKey().KeyChar;
+                Console.ReadLine();
+                Console.Write("input2 : ");
+                num2 = int.Parse(Console.ReadLine());
+
+                do
+                {
+                    if (total == 0)
+                    {
+                       
+                            switch (op)
+                            {
+                                case '+':
+                                    total = num1 + num2;
+                                    break;
+                                case '-':
+                                    total = num1 - num2;
+                                    break;
+                                case '*':
+                                    total = num1 * num2;
+                                    break;
+                                case '/':
+                                    total = num1 / num2;
+                                    break;
+                                default:
+                                Console.WriteLine("error");
+                                break;
+                            }
+                        Console.WriteLine($"{total}\n\n");
+                        
+                    }
+                    
+
+                    else if (Continue == 'Y' || Continue == 'y')
+                    {
+                        Console.Write($"insert type : ");
+                        op = Console.ReadKey().KeyChar;
+                        Console.ReadLine();
+                        Console.Write("input2 : ");
+                        num2 = int.Parse(Console.ReadLine());
+                        num1 = total;
+                        switch (op)
+                        {
+                            case '+':
+                                total = num1 + num2;
+                                break;
+                            case '-':
+                                total = num1 - num2;
+                                break;
+                            case '*':
+                                total = num1 * num2;
+                                break;
+                            case '/':
+                                total = num1 / num2;
+                                break;
+                            default:
+                                Console.WriteLine("error");
+                                break;
+                                
+                        }
+                        Console.WriteLine($"{total} \n\n");
+                        
+                        
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("error");
+                        break;
+                    }
+                    
+                    Console.Write("Continue? (Y/N) : ");
+                    Continue = Console.ReadKey().KeyChar;
+                    Console.ReadLine();
+                    Console.WriteLine();
+                    Console.WriteLine();
+
+
+                }
+                while (Continue == 'Y' || Continue == 'y');
+
+                Console.WriteLine("Finish");
+                return;
+            }
+            Console.ReadKey();
+
+        
+        }
+    }
+}

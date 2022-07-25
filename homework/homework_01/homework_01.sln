@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mygame", "..\mygame\mygame.csproj", "{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework_2week", "..\homework_2week\homework_2week.csproj", "{B9AB71EE-360D-4B15-A732-5CBD43BF4855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011_car", "..\011_car\011_car.csproj", "{1959B9FA-1885-4172-B761-472FF061280C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AB71EE-360D-4B15-A732-5CBD43BF4855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AB71EE-360D-4B15-A732-5CBD43BF4855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AB71EE-360D-4B15-A732-5CBD43BF4855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AB71EE-360D-4B15-A732-5CBD43BF4855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1959B9FA-1885-4172-B761-472FF061280C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1959B9FA-1885-4172-B761-472FF061280C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1959B9FA-1885-4172-B761-472FF061280C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1959B9FA-1885-4172-B761-472FF061280C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

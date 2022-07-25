@@ -1,0 +1,6 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\011_car\bin\Debug\011_car.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\011_car\bin\Debug\011_car.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\011_car\bin\Debug\011_car.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\011_car\obj\Debug\011_car.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\011_car\obj\Debug\011_car.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\011_car\obj\Debug\011_car.pdb

@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\bin\Debug\homework_2week.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\bin\Debug\homework_2week.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\bin\Debug\homework_2week.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\obj\Debug\homework_2week.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\obj\Debug\homework_2week.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\obj\Debug\homework_2week.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\homework_2week\obj\Debug\homework_2week.pdb
