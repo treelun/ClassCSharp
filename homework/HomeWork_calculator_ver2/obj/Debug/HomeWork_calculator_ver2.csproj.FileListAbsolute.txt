@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\bin\Debug\HomeWork_calculator_ver2.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\bin\Debug\HomeWork_calculator_ver2.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\bin\Debug\HomeWork_calculator_ver2.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\obj\Debug\HomeWork_calculator_ver2.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\obj\Debug\HomeWork_calculator_ver2.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\obj\Debug\HomeWork_calculator_ver2.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\HomeWork_calculator_ver2\obj\Debug\HomeWork_calculator_ver2.pdb

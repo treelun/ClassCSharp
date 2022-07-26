@@ -30,106 +30,107 @@ namespace homework_2week
             저는 while문과 switch문, if 와 else if, continue 와 break, return을 모두 사용했습니다!
             화이팅입니다!3
         */
+        static void conti(ref char Continue)
+        {
+            Console.Write("Continue? (Y/N) : ");
+            Continue = Console.ReadKey().KeyChar;
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+        static void input(ref int num1,ref int num2,ref char op)
+        {
+            Console.Write("input1 : ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write($"insert type : ");
+            op = Console.ReadKey().KeyChar;
+            Console.ReadLine();
+            Console.Write("input2 : ");
+            num2 = int.Parse(Console.ReadLine());
+        }
+        static int cal(ref int num1,ref int num2,ref int total,ref char op)
+        {
+            int result = 0;
+
+            switch (op)
+            {
+                case '+':
+                    total = num1 + num2;
+                    break;
+                case '-':
+                    total = num1 - num2;
+                    break;
+                case '*':
+                    total = num1 * num2;
+                    break;
+                case '/':
+                    total = num1 / num2;
+                    break;
+                default:
+                    Console.WriteLine("error");
+                    break;
+            }
+            Console.WriteLine($"{num1}{op}{num2} = {total} \n\n");
+            return result;
+        }
+
+
+
         static void Main(string[] args)
         {
             {
-                int num1 = 0, num2 = 0, total = 0, contotal = 0;
+                int num1 = 0, num2 = 0, total = 0 ;
                 char op = ' ', Continue = ' ';
-                
-                string result = "";
 
 
+                input(ref num1,ref num2,ref op);
 
-                Console.Write("input1 : ");
-                num1 = int.Parse(Console.ReadLine());
-                Console.Write($"insert type : ");
-                op = Console.ReadKey().KeyChar;
-                Console.ReadLine();
-                Console.Write("input2 : ");
-                num2 = int.Parse(Console.ReadLine());
-
-                do
+                while (true)
                 {
-                    if (total == 0)
-                    {
-                       
-                            switch (op)
-                            {
-                                case '+':
-                                    total = num1 + num2;
-                                    break;
-                                case '-':
-                                    total = num1 - num2;
-                                    break;
-                                case '*':
-                                    total = num1 * num2;
-                                    break;
-                                case '/':
-                                    total = num1 / num2;
-                                    break;
-                                default:
-                                Console.WriteLine("error");
-                                break;
-                            }
-                        Console.WriteLine($"{total}\n\n");
-                        
-                    }
-                    
 
-                    else if (Continue == 'Y' || Continue == 'y')
+
+                    cal(ref num1, ref num2, ref total, ref op);
+
+                    conti(ref Continue);
+
+                    num1 = total;
+
+                    if (Continue == 'Y' || Continue == 'y')
                     {
+
                         Console.Write($"insert type : ");
                         op = Console.ReadKey().KeyChar;
                         Console.ReadLine();
                         Console.Write("input2 : ");
                         num2 = int.Parse(Console.ReadLine());
-                        num1 = total;
-                        switch (op)
-                        {
-                            case '+':
-                                total = num1 + num2;
-                                break;
-                            case '-':
-                                total = num1 - num2;
-                                break;
-                            case '*':
-                                total = num1 * num2;
-                                break;
-                            case '/':
-                                total = num1 / num2;
-                                break;
-                            default:
-                                Console.WriteLine("error");
-                                break;
-                                
-                        }
-                        Console.WriteLine($"{total} \n\n");
-                        
-                        
 
+                        continue;
+
+                    }
+                    else if (Continue == 'N' || Continue == 'n')
+                    {
+                        
+                        Console.WriteLine("Finish");
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("error");
                         break;
                     }
-                    
-                    Console.Write("Continue? (Y/N) : ");
-                    Continue = Console.ReadKey().KeyChar;
-                    Console.ReadLine();
-                    Console.WriteLine();
-                    Console.WriteLine();
+
+
 
 
                 }
-                while (Continue == 'Y' || Continue == 'y');
+                return ;
 
-                Console.WriteLine("Finish");
-                return;
+
+
             }
             Console.ReadKey();
 
-        
+
         }
     }
 }
