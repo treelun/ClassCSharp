@@ -88,7 +88,7 @@ namespace HomeWork_calculator_ver2
             char op;
             char Continue;
 
-            public Calcurator(ref int _num1, int _num2, int _total,  char _op, char _Continue)
+            public Calcurator(ref int _num1, ref int _num2, ref int _total,  ref char _op, ref char _Continue)
             {
                 num1 = _num1;
                 num2 = _num2;
@@ -239,7 +239,7 @@ namespace HomeWork_calculator_ver2
 
             }
             Console.ReadKey();
-            */
+            
             {
                 int num1 = 0, num2 = 0, total = 0;
                 char op = ' ', Continue = ' ';
@@ -254,18 +254,10 @@ namespace HomeWork_calculator_ver2
                 Console.WriteLine();
                 while (true)
                 {
-                    curator.Setnum2(num2);
-                    curator.SetnOP(op);
-                    curator.Cal();
-                    curator.SetConti(Continue);
-                    curator.GetContinue(Continue);
-                    Console.Write($"{curator.GetContinue(Continue)}");
-                    Console.WriteLine();
+
                     if (Continue == 'N' || Continue == 'n')
                     {
-                        curator.transnum1(total);
-                        curator.Cal();
-                        Console.Write($"{curator.Getnum1()} {curator.GetOp(op)} {curator.Getnum2()} = {curator.Cal()}");
+
                     }
                     else if (Continue == 'Y' || Continue == 'y')
                     {
@@ -279,27 +271,96 @@ namespace HomeWork_calculator_ver2
                 }
                 return;
             }
-            
-            //{
-            //    //op가 int 값이 되어야함 배열을 사용하는게 맞는거같음
+            */
+            {
+                //op가 int 값이 되어야함 배열을 사용하는게 맞는거같음
+                //여기가 반복이 되어야함
 
-            //    char[] arrayinput = new char[11] {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
+                //Console.Write("input : ");
+                //string strCalc = Console.ReadLine();// 문자열을 입력 
+                //char[] arrCalc = strCalc.ToCharArray();  // 문자열을 문자 배열로 변경
 
-            //    char index = ' ';
+                //-------------------------------------------------------------------------
+                Console.Write("input : ");
+                string strCalc = Console.ReadLine();// 문자열을 입력 
+                char[] arrCalc = strCalc.ToCharArray();  // 문자열을 문자 배열로 변경
 
-            //    for (int i = 0; i < arrayinput.Length; i++)
-            //    {
-            //        Console.Write($"input: ");
-            //        index = char.Parse(Console.ReadLine());
-            //        Console.WriteLine();
-            //        arrayinput[i] = index;
-            //        Console.Write($"[{i}]: {arrayinput[i]}");
-            //        Console.WriteLine();
-            //    }
+                 
 
-            //}
+                double[] arrNum = new double[100];  // 연산 숫자 배열   
+                char[] arrOp = new char[100];  // 연산자 배열   
+                int numCnt = 0;    
+                int opCnt = 0;    
+                bool contNum = false;  // 두자릿수 이상 연속된 숫자 인지 체크
 
-               
-        }
+                    for (int i = 0; i < arrCalc.Length; i++)
+                    {
+                        if ((arrCalc[i] >= '0') && (arrCalc[i] <= '9'))
+                        {
+                            if (contNum)
+                                arrNum[numCnt] = (arrNum[numCnt] * 10) + double.Parse(arrCalc[i].ToString());
+
+                            else arrNum[numCnt] = double.Parse(arrCalc[i].ToString());
+
+                            contNum = true;
+                        }
+                        else
+                        {
+                            numCnt++;
+                            arrOp[opCnt++] = arrCalc[i];
+                            contNum = false;
+                        }
+                    }
+
+
+                    // 'x', '/' 의 경우 뒤에서 부터 연산자를 하나씩 꺼내면서 결과 계산
+                    // 계산 결과를 앞 숫자 배열에 넣고 뒷 숫자 배열은 0 으로 바꿔준다.
+                    // 계산한 연산자 'x', '/' 는 '+'로 바꿔준다
+                    double resultCalc = 0;
+                    for (int i = opCnt; i >= 0; i--)
+                    { switch (arrOp[i])
+                        {
+                            case 'x':
+                                arrNum[i] = arrNum[i] * arrNum[i + 1];
+                                arrNum[i + 1] = 0; arrOp[i] = '+';
+                                break;
+                            case '/': arrNum[i] = arrNum[i] / arrNum[i + 1];
+                                arrNum[i + 1] = 0; arrOp[i] = '+';
+                                break;
+                            default:
+                                break;
+                        }
+                        resultCalc = arrNum[i + 1]; }
+
+                    // '+', '-' 연산은 앞에서 부터 계산한다.
+                    for (int i = 0; i < opCnt; i++)
+                    {
+                        switch (arrOp[i])
+                        {
+                            case '+': arrNum[i + 1] = arrNum[i] + arrNum[i + 1];
+                                break;
+                            case '-': arrNum[i + 1] = arrNum[i] - arrNum[i + 1];
+                                break;
+                            default: break;
+                        }
+                        resultCalc = arrNum[i + 1];
+                    }
+
+                    Console.WriteLine(resultCalc);
+
+
+            }
+
+
+            // 연산자를 하나씩 꺼내면서 결과 계산
+            }
+
+ 
     }
+
+        
+
+
+    
 }
+

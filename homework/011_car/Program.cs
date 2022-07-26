@@ -9,64 +9,34 @@ namespace _011_car
     class Program
     {
 
-        static void Main(string[] args)
+        static int Calculator(ref int num1, ref int num2, ref int total, ref char op)
         {
-            int num1 = 0, num2 = 0, total = 0;
-            char op = ' ', con = ' ';
-            
+            int result = 0;
 
-            Console.Write("input1 : ");
-            num1 = int.Parse(Console.ReadLine());
-            while (true)
+            switch (op)
             {
-                Console.Write($"insert type : ");
-                op = Console.ReadKey().KeyChar;
-                Console.ReadLine();
-                Console.Write("input2 : ");
-                num2 = int.Parse(Console.ReadLine());
-                switch (op)
-                    {
-                        case '+':
-                            total = num1 + num2;
-                            break;
-                        case '-':
-                            total = num1 - num2;
-                            break;
-                        case '*':
-                            total = num1 * num2;
-                            break;
-                        case '/':
-                            total = num1 / num2;
-                            break;
-                        default:
-                            Console.WriteLine("error");
-                            break;
-                    }
-                    
-                Console.WriteLine($"{total} \n\n");
-                Console.Write("Continue? (Y/N) : ");
-                con = Console.ReadKey().KeyChar;
-                Console.ReadLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                if (con == 'Y' || con == 'y')
-                {
-                    num1 = total;
-                    continue;
-                }
-                else if (con == 'N' || con == 'n')
-                {
-                    Console.WriteLine("Finish");
+                case '+':
+                    total = num1 + num2;
                     break;
-                }
-                else
-                {
+                case '-':
+                    total = num1 - num2;
+                    break;
+                case '*':
+                    total = num1 * num2;
+                    break;
+                case '/':
+                    total = num1 / num2;
+                    break;
+                default:
                     Console.WriteLine("error");
                     break;
-                }
-                
             }
-            return;
+            Console.WriteLine($"{num1}{op}{num2} = {total} \n\n");
+            return result;
+        }
+        static void Main(string[] args)
+        {
+
         }
     }
 }

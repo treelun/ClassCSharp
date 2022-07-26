@@ -38,6 +38,7 @@ namespace homework_2week
             Console.WriteLine();
             Console.WriteLine();
         }
+
         static void input(ref int num1,ref int num2,ref char op)
         {
             Console.Write("input1 : ");

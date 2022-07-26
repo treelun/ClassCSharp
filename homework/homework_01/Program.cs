@@ -141,76 +141,81 @@ namespace homework_01
         }
             */
             //for문
+            //{
+            //    int input1 = 0;
+
+
+            //    Console.Write("input1 : ");
+            //    input1 = int.Parse(Console.ReadLine());
+            //    Console.Write("input2 : ");
+            //    var input2 = Console.ReadLine();
+
+            //    for (int i = 0; i < input1; i++)
+            //    {
+            //        Console.WriteLine(input2);
+            //        if (i ==4 )
+            //        {
+            //            Console.WriteLine("5");
+            //        }
+            //    }
+            //}
+
+
+            ////while문
+
+            //{
+            //    int x = 0;
+            //    while (x < 5)
+
+            //    {
+            //        Console.Write("input1 : ");
+            //        x++;
+            //    }
+            //}
+            ////foreach
+            //int[] cells = {
+            //    '1', '2', '3', '4', '5', '6', '7', '8', '9'
+            //};
+
+            //foreach (int cell in cells)
+            //{
+            //    Console.WriteLine(cell + 3); 
+            //}
+            ////switch
+            //var input1 = "";
+            //Console.Write("input1 : ");
+            //input1 = Console.ReadLine();
+            //switch (input1)
+            //{
+            //    case "1":
+            //        Console.WriteLine("Hello");
+            //        break;
+            //    case "2":
+            //        Console.WriteLine("Hi");
+            //        break;
+            //    case "3":
+            //        Console.WriteLine("bye");
+            //        break;
+            //    case "4":
+            //        Console.WriteLine("sir");
+            //        break;
+            //    case "5":
+            //        Console.WriteLine("my");
+            //        break;
+
+            //    default:
+
+            //        System.Console.WriteLine(
+            //        "\nERROR:  Enter a value from 1-9. "
+            //        + "Push ENTER to quit");
+            //        break;
+            //}
+
             {
-                int input1 = 0;
-                
-
-                Console.Write("input1 : ");
-                input1 = int.Parse(Console.ReadLine());
-                Console.Write("input2 : ");
-                var input2 = Console.ReadLine();
-
-                for (int i = 0; i < input1; i++)
-                {
-                    Console.WriteLine(input2);
-                    if (i ==4 )
-                    {
-                        Console.WriteLine("5");
-                    }
-                }
+                double num = 20;
+                double num1 = 10;
+                Console.WriteLine(num + num1);
             }
-
-
-            //while문
-
-            {
-                int x = 0;
-                while (x < 5)
-
-                {
-                    Console.Write("input1 : ");
-                    x++;
-                }
-            }
-            //foreach
-            int[] cells = {
-                '1', '2', '3', '4', '5', '6', '7', '8', '9'
-            };
-
-            foreach (int cell in cells)
-            {
-                Console.WriteLine(cell + 3); 
-            }
-            //switch
-            var input1 = "";
-            Console.Write("input1 : ");
-            input1 = Console.ReadLine();
-            switch (input1)
-            {
-                case "1":
-                    Console.WriteLine("Hello");
-                    break;
-                case "2":
-                    Console.WriteLine("Hi");
-                    break;
-                case "3":
-                    Console.WriteLine("bye");
-                    break;
-                case "4":
-                    Console.WriteLine("sir");
-                    break;
-                case "5":
-                    Console.WriteLine("my");
-                    break;
-               
-                default:
-                   
-                    System.Console.WriteLine(
-                    "\nERROR:  Enter a value from 1-9. "
-                    + "Push ENTER to quit");
-                    break;
-            }
-
            
         }
 
