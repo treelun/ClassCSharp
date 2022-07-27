@@ -6,6 +6,131 @@ using System.Threading.Tasks;
 
 namespace homework_2week
 {
+    public class Carclulator
+    {
+        public int num1 = 0, num2 = 0, total = 0;
+        public char op = ' ', Continue = ' ';
+        public void conti(ref char Continue)
+        {
+            Console.Write("Continue? (Y/N) : ");
+            Continue = Console.ReadKey().KeyChar;
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        public void input(ref int num1, ref int num2, ref char op)
+        {
+            Console.Write("input1 : ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write($"insert type : ");
+            op = Console.ReadKey().KeyChar;
+            Console.ReadLine();
+            Console.Write("input2 : ");
+            num2 = int.Parse(Console.ReadLine());
+        }
+
+        public void input(ref int num2, ref char op)
+        {
+
+            Console.Write($"insert type : ");
+            op = Console.ReadKey().KeyChar;
+            Console.ReadLine();
+            Console.Write("input2 : ");
+            num2 = int.Parse(Console.ReadLine());
+        }
+        public int cal(ref int num1, ref int num2, ref int total, ref char op)
+        {
+            int result = 0;
+
+            switch (op)
+            {
+                case '+':
+                    total = num1 + num2;
+                    break;
+                case '-':
+                    total = num1 - num2;
+                    break;
+                case '*':
+                    total = num1 * num2;
+                    break;
+                case '/':
+                    total = num1 / num2;
+                    break;
+                default:
+                    Console.WriteLine("error");
+                    break;
+            }
+            Console.WriteLine($"{num1}{op}{num2} = {total} \n\n");
+            return result;
+        }
+        public int roop(ref char Continue, ref int num2, ref char op)
+        {
+            int result = 0;
+
+            if (Continue == 'Y' || Continue == 'y')
+            {
+
+                input(ref num2, ref op);
+
+                
+            }
+            else if (Continue == 'N' || Continue == 'n')
+            {
+
+                Console.WriteLine("Finish");
+                
+            }
+            else
+            {
+                Console.WriteLine("error");
+               
+            }
+            return result;
+        }
+        public void Calcu()
+        {
+            input(ref num1, ref num2, ref op);
+
+            while (true)
+            {
+
+
+                cal(ref num1, ref num2, ref total, ref op);
+
+                conti(ref Continue);
+
+                num1 = total;
+
+                if (Continue == 'Y' || Continue == 'y')
+                {
+
+                    input(ref num2, ref op);
+
+                    continue;
+
+                }
+                else if (Continue == 'N' || Continue == 'n')
+                {
+
+                    Console.WriteLine("Finish");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("error");
+                    break;
+                }
+
+
+
+
+            }
+            return;
+            Console.ReadKey();
+        }
+    }
+
     class Program
     {
         /*숙제입니다! 기간은 7월 27일(수요일) 밤 9시 까지입니다!
@@ -49,6 +174,16 @@ namespace homework_2week
             Console.Write("input2 : ");
             num2 = int.Parse(Console.ReadLine());
         }
+
+        static void input(ref int num2, ref char op)
+        {
+           
+            Console.Write($"insert type : ");
+            op = Console.ReadKey().KeyChar;
+            Console.ReadLine();
+            Console.Write("input2 : ");
+            num2 = int.Parse(Console.ReadLine());
+        }
         static int cal(ref int num1,ref int num2,ref int total,ref char op)
         {
             int result = 0;
@@ -79,6 +214,7 @@ namespace homework_2week
 
         static void Main(string[] args)
         {
+            /*
             {
                 int num1 = 0, num2 = 0, total = 0 ;
                 char op = ' ', Continue = ' ';
@@ -99,11 +235,7 @@ namespace homework_2week
                     if (Continue == 'Y' || Continue == 'y')
                     {
 
-                        Console.Write($"insert type : ");
-                        op = Console.ReadKey().KeyChar;
-                        Console.ReadLine();
-                        Console.Write("input2 : ");
-                        num2 = int.Parse(Console.ReadLine());
+                        input(ref num2, ref op);
 
                         continue;
 
@@ -125,13 +257,21 @@ namespace homework_2week
 
                 }
                 return ;
+             Console.ReadKey();
+            */
+            {
 
-
+                Carclulator car = new Carclulator();
+                car.Calcu();
+                
 
             }
-            Console.ReadKey();
 
 
         }
+
+
+
     }
 }
+
