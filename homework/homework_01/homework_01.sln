@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework_01", "homework_01.csproj", "{10B11E7C-E4FF-4216-B9F8-5583EA1BEDD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_Homwork", "001_Homwork.csproj", "{10B11E7C-E4FF-4216-B9F8-5583EA1BEDD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "445", "..\445\445.csproj", "{576E05C1-413D-4438-AC39-C24361B32EEE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{CBBBD0B1-D38F-4789-B1CA-06347F3E6C7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_study", "..\445\002_study.csproj", "{576E05C1-413D-4438-AC39-C24361B32EEE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mygame", "..\mygame\mygame.csproj", "{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework_2week", "..\homework_2week\homework_2week.csproj", "{B9AB71EE-360D-4B15-A732-5CBD43BF4855}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Homework_Carculator_ver1", "..\homework_2week\002_Homework_Carculator_ver1.csproj", "{B9AB71EE-360D-4B15-A732-5CBD43BF4855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011_car", "..\011_car\011_car.csproj", "{1959B9FA-1885-4172-B761-472FF061280C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Homework_Carculator", "..\011_car\002_Homework_Carculator.csproj", "{1959B9FA-1885-4172-B761-472FF061280C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork_calculator_ver2", "..\HomeWork_calculator_ver2\HomeWork_calculator_ver2.csproj", "{F8AEEA55-32EA-40E0-9FEB-637762D5BF2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_Homework_Carculator_ver2", "..\HomeWork_calculator_ver2\002_Homework_Carculator_ver2.csproj", "{F8AEEA55-32EA-40E0-9FEB-637762D5BF2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_Homework", "..\003_Homework\003_Homework.csproj", "{D8954EFC-DBEF-4D7C-AF28-7C73B3902A9A}"
 EndProject
@@ -33,10 +31,6 @@ Global
 		{576E05C1-413D-4438-AC39-C24361B32EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{576E05C1-413D-4438-AC39-C24361B32EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{576E05C1-413D-4438-AC39-C24361B32EEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CBBBD0B1-D38F-4789-B1CA-06347F3E6C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBBBD0B1-D38F-4789-B1CA-06347F3E6C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBBBD0B1-D38F-4789-B1CA-06347F3E6C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBBBD0B1-D38F-4789-B1CA-06347F3E6C7F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C94E4D6-14E1-4D99-8DF4-E2C1AB26D8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU

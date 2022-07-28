@@ -5,3 +5,10 @@ C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.csproj.Assemb
 C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.exe
 C:\Users\admin\Desktop\ClassCSharp-main\homework\445\obj\Debug\445.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\obj\Debug\445.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\obj\Debug\445.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\obj\Debug\445.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\obj\Debug\445.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\bin\Debug\445.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\bin\Debug\445.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\445\bin\Debug\445.pdb
