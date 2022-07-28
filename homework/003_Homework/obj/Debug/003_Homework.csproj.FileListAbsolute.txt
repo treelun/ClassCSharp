@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\bin\Debug\003_Homework.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\bin\Debug\003_Homework.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\bin\Debug\003_Homework.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\obj\Debug\003_Homework.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\obj\Debug\003_Homework.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\obj\Debug\003_Homework.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\003_Homework\obj\Debug\003_Homework.pdb
