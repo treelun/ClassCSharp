@@ -7,78 +7,7 @@ using System.Threading.Tasks;
 namespace HomeWork_calculator_ver2
 {
     class Program
-    {
-        static void conti(ref char Continue)
-        {
-            Console.Write("Continue? (Y/N) : ");
-            Continue = Console.ReadKey().KeyChar;
-            Console.ReadLine();
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-        static void input(ref int num1, ref int num2, ref char op)
-        {
-            Console.Write("input1 : ");
-            num1 = int.Parse(Console.ReadLine());
-            Console.Write($"insert type : ");
-            op = Console.ReadKey().KeyChar;
-            Console.ReadLine();
-            Console.Write("input2 : ");
-            num2 = int.Parse(Console.ReadLine());
-        }
-        static int cal(ref int num1, ref int num2, ref int total, ref char op)
-        {
-            int result = 0;
-
-            switch (op)
-            {
-                case '+':
-                    total = num1 + num2;
-                    break;
-                case '-':
-                    total = num1 - num2;
-                    break;
-                case '*':
-                    total = num1 * num2;
-                    break;
-                case '/':
-                    total = num1 / num2;
-                    break;
-                default:
-                    Console.WriteLine("error");
-                    break;
-            }
-            Console.WriteLine($"{num1}{op}{num2} = {total} \n\n");
-            return result;
-        }
-        static int cal2(ref int total, ref char op)
-        {
-
-            int result = 0;
-
-            switch (op)
-            {
-                case '+':
-                    total = total + total;
-                    break;
-                case '-':
-                    total = total - total;
-                    break;
-                case '*':
-                    total = total * total;
-                    break;
-                case '/':
-                    total = total / total;
-                    break;
-                default:
-                    Console.WriteLine("error");
-                    break;
-            }
-            Console.Write("");
-            return result;
-        }
-
-
+       
         static void Main(string[] args)
         {
             {
