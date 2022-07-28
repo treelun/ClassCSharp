@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HomeWork_calculator_ver2
 {
     class Program
-       
+    { 
         static void Main(string[] args)
         {
             {
@@ -42,17 +42,17 @@ namespace HomeWork_calculator_ver2
                             switch (arraychar[p])
                             {
                                 case '*':
-                                    Console.WriteLine($"{arrayint[p]} = {arrayint[p]} + {arrayint[p+1]} ");
+                                    Console.Write($"{arrayint[p]} * {arrayint[p+1]} ");
                                     arrayint[p] = arrayint[p] * arrayint[p + 1];
-                                    Console.WriteLine("arrayint* : " + arrayint[p]);
+                                    Console.Write($"= {arrayint[p]}"); 
                                     arrayint[p + 1] = 0;
                                     arraychar[p] = '+';
                                     resultCalc = arrayint[p];
                                     continue;
                                 case '/':
-                                    Console.WriteLine($"{arrayint[p]} = {arrayint[p]} + {arrayint[p + 1]} ");
+                                    Console.Write($"{arrayint[p]} = {arrayint[p]} / {arrayint[p + 1]} ");
                                     arrayint[p] = arrayint[p] / arrayint[p + 1];
-                                    Console.WriteLine("arrayint/ : " + arrayint[p]);
+                                    Console.Write($"= {arrayint[p]}");
                                     arrayint[p + 1] = 0;
                                     arraychar[p] = '+';
                                     resultCalc = arrayint[p];
@@ -101,8 +101,8 @@ namespace HomeWork_calculator_ver2
                         
                     }
 
-                    }
-                    return;
+                }
+                return;
 
 
 
@@ -190,15 +190,17 @@ namespace HomeWork_calculator_ver2
                         */
 
                         // 연산자를 하나씩 꺼내면서 결과 계산
-                    }
-
-
-                }
-
-
-
-
-
             }
-        } 
+
+
+        }
+
+
+
+
+
+         
+    }
+}
+
 
