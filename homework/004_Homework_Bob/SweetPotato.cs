@@ -12,7 +12,7 @@ namespace _004_Homework_Bob
         public override int dontEat(int empty)
         {
             Console.WriteLine("고구마 밥을 안먹었다.(공복1/2증가)");
-            base.dontEat(++empty);
+            base.dontEat(empty);
 
             return empty/2;
         }
