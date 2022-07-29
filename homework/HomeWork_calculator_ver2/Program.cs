@@ -16,6 +16,7 @@ namespace HomeWork_calculator_ver2
                 int opcnt = 0;
                 char Continue = ' ';
                 float resultCalc = 0;
+                float[] arrayresult = new float[100];
 
 
                 Console.Write("input : ");
@@ -37,47 +38,64 @@ namespace HomeWork_calculator_ver2
 
                     if (Continue == 'N' || Continue == 'n')
                         {
-                        for (int p = opcnt; p >= 0; p--)
+                        for (int p = 1; p < opcnt; p++)
                         {
                             switch (arraychar[p])
                             {
                                 case '*':
-                                    Console.Write($"{arrayint[p]} * {arrayint[p+1]} ");
-                                    arrayint[p] = arrayint[p] * arrayint[p + 1];
-                                    Console.Write($"= {arrayint[p]}"); 
-                                    arrayint[p + 1] = 0;
-                                    arraychar[p] = '+';
+                                    Console.Write($"{arrayint[p]} * {arrayint[p + 1]} ");
+                                    arrayresult[0] = arrayint[p] * arrayint[p + 1];
+                                    Console.Write($"= {arrayint[p]} \n");
+                                    
+                                    
                                     resultCalc = arrayint[p];
-                                    continue;
+                                    break;
                                 case '/':
-                                    Console.Write($"{arrayint[p]} = {arrayint[p]} / {arrayint[p + 1]} ");
+                                    Console.Write($"{arrayint[p]} / {arrayint[p + 1]} ");
                                     arrayint[p] = arrayint[p] / arrayint[p + 1];
-                                    Console.Write($"= {arrayint[p]}");
-                                    arrayint[p + 1] = 0;
-                                    arraychar[p] = '+';
+                                    Console.Write($"= {arrayint[p]} \n");
+                                    
                                     resultCalc = arrayint[p];
                                     continue;
 
                                 default:
                                     break;
                             }
-                            
+
                         }
-                        
-                        for (int k = 0; k < opcnt; k++)
+
+                        for (int k = 0; k <= opcnt; k++)
                         {
                             switch (arraychar[k])
                             {
+                              /*  case '*':
+                                    Console.Write($"{arrayint[k]} * {arrayint[k + 1]} ");
+                                    arrayint[k] = arrayint[k] * arrayint[k + 1];
+                                    Console.Write($"= {arrayint[k]} \n");
+                                    arrayint[k + 1] = 0;
+                                    arraychar[k] = '+';
+                                    resultCalc = arrayint[k];
+                                    continue;
+                                case '/':
+                                    Console.Write($"{arrayint[k]} / {arrayint[k + 1]} ");
+                                    arrayint[k] = arrayint[k] / arrayint[k + 1];
+                                    Console.Write($"= {arrayint[k]} \n");
+                                    arrayint[k + 1] = 0;
+                                    arraychar[k] = '+';
+                                    resultCalc = arrayint[k];
+                                    continue;
+*/
                                 case '+':
-                                    Console.WriteLine($"{arrayint[k + 1]} = {arrayint[k]} + {arrayint[k + 1]} ");
+                                    Console.Write($"{arrayint[k]} + {arrayint[k + 1]} ");
                                     arrayint[k + 1] = arrayint[k] + arrayint[k + 1];
-                                    
+                                    Console.Write($"= {arrayint[k + 1]} \n");
                                     resultCalc = arrayint[k + 1];
                                     continue;
                                 case '-':
-                                    Console.WriteLine($"{arrayint[k + 1]} = {arrayint[k]} - {arrayint[k + 1]} ");
+                                    Console.Write($"{arrayint[k]} - {arrayint[k + 1]} ");
                                     arrayint[k + 1] = arrayint[k] - arrayint[k + 1];
-                                    
+                                    Console.Write($"= {arrayint[k + 1]} \n");
+
                                     resultCalc = arrayint[k + 1];
                                     continue;
                                 default:
@@ -98,7 +116,7 @@ namespace HomeWork_calculator_ver2
                     else
                     {
                         Console.WriteLine("Finish");
-                        
+                        break;
                     }
 
                 }

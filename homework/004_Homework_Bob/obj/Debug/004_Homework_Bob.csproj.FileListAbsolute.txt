@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\bin\Debug\004_Homework_Bob.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\bin\Debug\004_Homework_Bob.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\bin\Debug\004_Homework_Bob.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\obj\Debug\004_Homework_Bob.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\obj\Debug\004_Homework_Bob.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\obj\Debug\004_Homework_Bob.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\004_Homework_Bob\obj\Debug\004_Homework_Bob.pdb
