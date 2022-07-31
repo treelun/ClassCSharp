@@ -18,8 +18,8 @@ namespace Git_project
 
             Console.WriteLine($"{i}{s1}");
             Console.WriteLine(""+ i + s1);
-            string i3 = i.ToString();
-            Console.WriteLine("{0}{1}", i3, s1);
+            
+            Console.WriteLine("{0}{1}", i, s1);
 
 
 
