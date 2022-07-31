@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\Git_project\timewach_Game\bin\Debug\timewach_Game.exe.config
+C:\Users\admin\source\repos\Git_project\timewach_Game\bin\Debug\timewach_Game.exe
+C:\Users\admin\source\repos\Git_project\timewach_Game\bin\Debug\timewach_Game.pdb
+C:\Users\admin\source\repos\Git_project\timewach_Game\obj\Debug\timewach_Game.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Git_project\timewach_Game\obj\Debug\timewach_Game.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Git_project\timewach_Game\obj\Debug\timewach_Game.exe
+C:\Users\admin\source\repos\Git_project\timewach_Game\obj\Debug\timewach_Game.pdb

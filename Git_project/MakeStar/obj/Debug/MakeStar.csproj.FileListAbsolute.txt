@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\Git_project\MakeStar\obj\Debug\MakeStar.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Git_project\MakeStar\bin\Debug\MakeStar.exe.config
+C:\Users\admin\source\repos\Git_project\MakeStar\bin\Debug\MakeStar.exe
+C:\Users\admin\source\repos\Git_project\MakeStar\bin\Debug\MakeStar.pdb
+C:\Users\admin\source\repos\Git_project\MakeStar\obj\Debug\MakeStar.exe
+C:\Users\admin\source\repos\Git_project\MakeStar\obj\Debug\MakeStar.pdb
+C:\Users\admin\source\repos\Git_project\MakeStar\obj\Debug\MakeStar.csproj.AssemblyReference.cache
