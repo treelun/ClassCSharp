@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\Git_project\Action\bin\Debug\Action.exe.config
+C:\Users\admin\source\repos\Git_project\Action\bin\Debug\Action.exe
+C:\Users\admin\source\repos\Git_project\Action\bin\Debug\Action.pdb
+C:\Users\admin\source\repos\Git_project\Action\obj\Debug\Action.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Git_project\Action\obj\Debug\Action.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Git_project\Action\obj\Debug\Action.exe
+C:\Users\admin\source\repos\Git_project\Action\obj\Debug\Action.pdb
