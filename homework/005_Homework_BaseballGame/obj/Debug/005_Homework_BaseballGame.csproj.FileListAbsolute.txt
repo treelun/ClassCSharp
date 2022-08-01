@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\bin\Debug\005_Homework_BaseballGame.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\bin\Debug\005_Homework_BaseballGame.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\bin\Debug\005_Homework_BaseballGame.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\obj\Debug\005_Homework_BaseballGame.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\obj\Debug\005_Homework_BaseballGame.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\obj\Debug\005_Homework_BaseballGame.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\005_Homework_BaseballGame\obj\Debug\005_Homework_BaseballGame.pdb
