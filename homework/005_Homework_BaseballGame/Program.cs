@@ -57,18 +57,18 @@ namespace _005_Homework_BaseballGame
                 int strike = 0, ball = 0; //스트라이크 카운트와 볼카운트를 초기화 해줌 while문 안에 있지않으면 계속 누적되는 현상 발생 반복문을 돌고 continue로 돌아 나왔을때 0으로 초기화해주어야함
                 
 
-                Console.WriteLine($"라운드 {round++}");
+                Console.WriteLine($"라운드 {round}");
                 Console.Write("숫자를 입력하세요 : ");
                 string inputNum = Console.ReadLine();
                 char[] arrayinput = inputNum.ToCharArray();
                 //Console.WriteLine($"{arrayinput[0]},{arrayinput[1]},{arrayinput[2]}");//값이 배열로 잘 들어갔는지 확인
                 if (inputNum == sumRan)
                 {
-                    Console.WriteLine("정답입니다!! 박수짝짝!!! 게임을 종료합니다.");
+                    Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행 했습니다. 게임을 종료합니다.");
                     break;
                 }
                 //정답이 아닐시 스트라이크와 볼의 카운트를 계산하기 위해 들어가는 조건들, 전부다 아닐시 아웃으로 빼야하기에 다 입력하게됨...한자리라도 빠지면 아웃으로 빠지는 현상 발생
-                else if (arrayMake[0] == arrayinput[1] || arrayMake[0] == arrayinput[2] || arrayMake[1] == arrayinput[2] || arrayMake[0] == arrayinput[0] || arrayMake[1] == arrayinput[1] || arrayMake[2] == arrayinput[2])
+                else if (arrayMake[0] == arrayinput[0] || arrayMake[0] == arrayinput[1] || arrayMake[0] == arrayinput[2] || arrayMake[1] == arrayinput[0] || arrayMake[1] == arrayinput[1] || arrayMake[1] == arrayinput[2] || arrayMake[2] == arrayinput[0] || arrayMake[2] == arrayinput[1] || arrayMake[2] == arrayinput[2])
                 {
                     for (int i = 0; i < arrayMake.Length; i++)
                     {
@@ -80,17 +80,18 @@ namespace _005_Homework_BaseballGame
                         {
                             ball++;
                         }
-                        
+
                     }
                     Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}"); //출력
+                    round++;
+                   
                     continue;
                 }
-                else//모든조건이 맞지않을때 아웃출력
+                else
                 {
                     Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                    continue;
+                    round++;
                 }
-
                 continue;
             }
 
@@ -98,7 +99,7 @@ namespace _005_Homework_BaseballGame
 
         }
 
-
+        //arrayMake[0] == arrayinput[1] || arrayMake[0] == arrayinput[2] || arrayMake[1] == arrayinput[2] || arrayMake[0] == arrayinput[0] || arrayMake[1] == arrayinput[1] || arrayMake[2] == arrayinput[2]
 
 
 
