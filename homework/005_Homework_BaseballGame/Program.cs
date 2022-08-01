@@ -40,13 +40,13 @@ namespace _005_Homework_BaseballGame
         static void Main(string[] args)
         {
 
-           
+
 
 
 
             string sumRan = MakeNum(); //MakeNum 메서드를 sumRan에 담아줌
             char[] arrayMake = sumRan.ToCharArray(); //sumRan을 배열로 정리 123 을 받았으면 [1],[2],[3] 이런 식으로 배열에 담아줌
-            //Console.WriteLine($"{arrayMake[0]},{arrayMake[1]},{arrayMake[2]}"); //값이 배열로 잘 들어갔는지 확인
+            Console.WriteLine($"{arrayMake[0]},{arrayMake[1]},{arrayMake[2]}"); //값이 배열로 잘 들어갔는지 확인
             Console.WriteLine("숫자 야구 게임을 시작합니다!");
             int round = 1;
 
@@ -54,45 +54,85 @@ namespace _005_Homework_BaseballGame
             
             while (true)
             {
-                int strike = 0, ball = 0; //스트라이크 카운트와 볼카운트를 초기화 해줌 while문 안에 있지않으면 계속 누적되는 현상 발생 반복문을 돌고 continue로 돌아 나왔을때 0으로 초기화해주어야함
-                
-
                 Console.WriteLine($"라운드 {round}");
                 Console.Write("숫자를 입력하세요 : ");
                 string inputNum = Console.ReadLine();
                 char[] arrayinput = inputNum.ToCharArray();
-                //Console.WriteLine($"{arrayinput[0]},{arrayinput[1]},{arrayinput[2]}");//값이 배열로 잘 들어갔는지 확인
+
+                int strike = 0, ball = 0;
+
+                for (int i = 0; i < arrayMake.Length; i++)
+                {
+                    for (int k = 0; k < arrayMake.Length; k++)
+                    {
+                        if (arrayMake[i] == arrayinput[k])
+                        {
+                            if (i == k)
+                            {
+                                strike++;
+                            }
+                            else
+                            {
+                                ball++;
+                            }
+                        }
+
+                    }
+
+
+                }
                 if (inputNum == sumRan)
                 {
                     Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행 했습니다. 게임을 종료합니다.");
                     break;
                 }
-                //정답이 아닐시 스트라이크와 볼의 카운트를 계산하기 위해 들어가는 조건들, 전부다 아닐시 아웃으로 빼야하기에 다 입력하게됨...한자리라도 빠지면 아웃으로 빠지는 현상 발생
-                else if (arrayMake[0] == arrayinput[0] || arrayMake[0] == arrayinput[1] || arrayMake[0] == arrayinput[2] || arrayMake[1] == arrayinput[0] || arrayMake[1] == arrayinput[1] || arrayMake[1] == arrayinput[2] || arrayMake[2] == arrayinput[0] || arrayMake[2] == arrayinput[1] || arrayMake[2] == arrayinput[2])
+                else if (strike == 0 && ball == 0)
                 {
-                    for (int i = 0; i < arrayMake.Length; i++)
-                    {
-                        if (arrayMake[i] == arrayinput[i]) //자릿수가 같을때 스트라이크 카운트를 올려줌
-                        {
-                            strike++;
-                        }
-                        else if (arrayMake[i] == arrayinput[1] || arrayMake[i] == arrayinput[2] || arrayMake[i] == arrayinput[0]) // 다른자릿수가 같을땐 볼카운트를 올려줌
-                        {
-                            ball++;
-                        }
-
-                    }
-                    Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}"); //출력
+                    Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
                     round++;
-                   
                     continue;
                 }
                 else
                 {
-                    Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
+                    Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
                     round++;
+                    continue;
                 }
-                continue;
+
+
+
+                //int strike = 0, ball = 0; //스트라이크 카운트와 볼카운트를 초기화 해줌 while문 안에 있지않으면 계속 누적되는 현상 발생 반복문을 돌고 continue로 돌아 나왔을때 0으로 초기화해주어야함
+
+
+                /*                Console.WriteLine($"라운드 {round}");
+                                Console.Write("숫자를 입력하세요 : ");
+                                string inputNum = Console.ReadLine();
+                                char[] arrayinput = inputNum.ToCharArray();*/
+                //Console.WriteLine($"{arrayinput[0]},{arrayinput[1]},{arrayinput[2]}");//값이 배열로 잘 들어갔는지 확인
+
+
+                //정답이 아닐시 스트라이크와 볼의 카운트를 계산하기 위해 들어가는 조건들, 전부다 아닐시 아웃으로 빼야하기에 다 입력하게됨...한자리라도 빠지면 아웃으로 빠지는 현상 발생
+                /*                else if (arrayMake[0] == arrayinput[0] || arrayMake[0] == arrayinput[1] || arrayMake[0] == arrayinput[2] || arrayMake[1] == arrayinput[0] || arrayMake[1] == arrayinput[1] || arrayMake[1] == arrayinput[2] || arrayMake[2] == arrayinput[0] || arrayMake[2] == arrayinput[1] || arrayMake[2] == arrayinput[2])
+                                {
+                                    for (int i = 0; i < arrayMake.Length; i++)
+                                    {
+                                        if (arrayMake[i] == arrayinput[i]) //자릿수가 같을때 스트라이크 카운트를 올려줌
+                                        {
+                                            strike++;
+                                        }
+                                        else if (arrayMake[i] == arrayinput[1] || arrayMake[i] == arrayinput[2] || arrayMake[i] == arrayinput[0]) // 다른자릿수가 같을땐 볼카운트를 올려줌
+                                        {
+                                            ball++;
+                                        }
+
+                                    }
+                                    Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}"); //출력
+                                    round++;
+
+                                    continue;
+                                }*/
+
+                
             }
 
 
@@ -128,5 +168,42 @@ namespace _005_Homework_BaseballGame
 
         }
         
+        static int SBCount()//가져와서 어떻게 써야할지 모르겠음..
+        {
+            string sumRan = MakeNum(); //MakeNum 메서드를 sumRan에 담아줌
+            char[] arrayMake = sumRan.ToCharArray(); //sumRan을 배열로 정리 123 을 받았으면 [1],[2],[3] 이런 식으로 배열에 담아줌
+            Console.Write("숫자를 입력하세요 : ");
+            string inputNum = Console.ReadLine();
+            char[] arrayinput = inputNum.ToCharArray();
+
+            int strike = 0, ball = 0;
+
+            for (int i = 0; i < arrayMake.Length; i++)
+                {
+                    for (int k = 0; k < arrayMake.Length; k++)
+                    {
+                        if (arrayMake[i] == arrayinput[k])
+                        {
+                            if (i == k)
+                            {
+                                strike++;
+                            }
+                            else
+                            {
+                                ball++;
+                            }
+                        }
+
+                    }
+
+
+                }
+                /*                    Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
+                                    round++;*/
+                Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}"); //출력
+
+
+            return 0; 
+        }
     }
 }
