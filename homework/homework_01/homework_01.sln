@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_Homework_Bob", "..\004_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_Homework_BaseballGame", "..\005_Homework_BaseballGame\005_Homework_BaseballGame.csproj", "{AAB3105D-A97F-42D4-B636-C6F1D9B65C0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "error", "..\error\error.csproj", "{3A12A344-2705-4CF2-AB63-11029E363506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_Homework_Lotto", "..\006_Homework_Lotto\006_Homework_Lotto.csproj", "{FA643F57-2A3D-4FEE-A2D2-A7EF919CA35A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{AAB3105D-A97F-42D4-B636-C6F1D9B65C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB3105D-A97F-42D4-B636-C6F1D9B65C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB3105D-A97F-42D4-B636-C6F1D9B65C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A12A344-2705-4CF2-AB63-11029E363506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A12A344-2705-4CF2-AB63-11029E363506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A12A344-2705-4CF2-AB63-11029E363506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A12A344-2705-4CF2-AB63-11029E363506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA643F57-2A3D-4FEE-A2D2-A7EF919CA35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA643F57-2A3D-4FEE-A2D2-A7EF919CA35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA643F57-2A3D-4FEE-A2D2-A7EF919CA35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA643F57-2A3D-4FEE-A2D2-A7EF919CA35A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

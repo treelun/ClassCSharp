@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\bin\Debug\error.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\bin\Debug\error.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\bin\Debug\error.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\obj\Debug\error.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\obj\Debug\error.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\obj\Debug\error.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\error\obj\Debug\error.pdb

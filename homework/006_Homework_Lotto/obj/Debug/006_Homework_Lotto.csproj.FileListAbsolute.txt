@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\bin\Debug\006_Homework_Lotto.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\bin\Debug\006_Homework_Lotto.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\bin\Debug\006_Homework_Lotto.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\obj\Debug\006_Homework_Lotto.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\obj\Debug\006_Homework_Lotto.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\obj\Debug\006_Homework_Lotto.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\006_Homework_Lotto\obj\Debug\006_Homework_Lotto.pdb
