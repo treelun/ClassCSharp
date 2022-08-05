@@ -143,7 +143,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
                     case 7:
                         if (strike == 7)
                         {
@@ -163,7 +163,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
                     case 6:
                         if (strike == 6)
                         {
@@ -183,7 +183,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
                     case 5:
                         if (strike == 5)
                         {
@@ -203,7 +203,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
                     case 4:
                         if (strike == 4)
                         {
@@ -223,7 +223,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
                     case 3:
                         if (strike == 3)
                         {
@@ -243,7 +243,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
                     case 2:
                         if (strike == 2)
                         {
@@ -263,7 +263,7 @@ namespace _005_Homework_BaseballGame
                             round++;
 
                         }
-                        break;
+                        continue;
 
                     default:
                         break;
