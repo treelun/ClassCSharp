@@ -116,7 +116,6 @@ namespace _006_Homework_Lotto
                     if (randomNum[i] == randomNum[i2])
                     {
                         i--;
-
                     }
                 }
 
@@ -153,7 +152,7 @@ namespace _006_Homework_Lotto
                 }
                 
             }
-            return Answer;
+            return Answer; //Answer를 리턴해줌
         }
 
         static void Final(int Answer) // Answer값을 받아옴 Answer가 5면 1등
