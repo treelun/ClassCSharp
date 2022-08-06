@@ -80,27 +80,30 @@ namespace _005_Homework_BaseballGame
         static void Main(string[] args)
         {
 
-
-
-
-
-
             string[] arrayMake = MakeNum(); //sumRan을 배열로 정리 123 을 받았으면 [1],[2],[3] 이런 식으로 배열에 담아줌
             //Console.WriteLine($"{arrayMake[0]},{arrayMake[1]}{arrayMake[2]}"); //값이 배열로 잘 들어갔는지 확인
             Console.WriteLine("숫자 야구 게임을 시작합니다!");
             int round = 1;
-            
-
 
             while (true)
             {
-                int strike = 0;
-                int ball = 0;
+                /*int strike = 0;
+                int ball = 0;*/
                 Console.WriteLine($"라운드 {round}");
 
                 string[] arrayInput = InputNum();
 
-                for (int i = 0; i < arrayMake.Length; i++)
+                if (SBCount(arrayMake, arrayInput))
+                {
+                    break;
+                }
+                else
+                {
+                    round++;
+                }
+            }
+            Console.WriteLine($"총{round}를 진행했습니다.");
+                /*for (int i = 0; i < arrayMake.Length; i++)
                 {
                     for (int k = 0; k < arrayMake.Length; k++)
                     {
@@ -121,8 +124,25 @@ namespace _005_Homework_BaseballGame
                     }
 
                 }
+                if (strike == arrayMake.Length)
+                {
+                    Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
+                    break;
 
-                switch (arrayMake.Length)
+                }
+                else if (strike == 0 && ball == 0)
+                {
+                    Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
+                    round++;
+
+                }
+                else
+                {
+                    Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
+                    round++;
+
+                }*/
+               /* switch (arrayMake.Length)
                 {
                     case 8:
                         if (strike == 8)
@@ -266,12 +286,12 @@ namespace _005_Homework_BaseballGame
                         continue;
 
                     default:
-                        break;
-                }
+                        break;*/
+                //}
 
 
-                break;
-            }
+                
+            
         }
 
 
@@ -333,194 +353,64 @@ namespace _005_Homework_BaseballGame
 
 
 
-        static int SBCount(char[] MakeArray)//가져와서 어떻게 써야할지 모르겠음..
+        static bool SBCount(string[] MakeArray, string[] _inputNum)//가져와서 어떻게 써야할지 모르겠음..
         {
-
-            Console.Write("숫자를 입력하세요 : ");
-            string inputNum = Console.ReadLine();
-            char[] arrayinput = inputNum.ToCharArray();
 
             int strike = 0;
             int ball = 0;
 
             for (int i = 0; i < MakeArray.Length; i++)
             {
-                for (int k = 0; k < i; k++)
+                for (int k = 0; k < MakeArray.Length; k++)
                 {
-                    if (MakeArray[i] == arrayinput[k])
+                    if (MakeArray[i] == _inputNum[k])
                     {
                         if (i == k)
                         {
                             strike++;
+                            
                         }
                         else
                         {
                             ball++;
+                            
                         }
                     }
 
                 }
 
             }
-            return strike;
+            
+            return Game(strike, ball, MakeArray);
         }
 
 
-        public static int Game(int strike, int ball)
+        public static bool Game(int strike, int ball, string[] arrayMake)
         {
-            string[] arrayMake = MakeNum();
-            InputNum();
 
-
-            int round = 1;
-            switch (arrayMake.Length)
+            
+            if (strike == arrayMake.Length)
             {
-                case 8:
-                    if (strike == 8)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
+                Console.WriteLine($"정답입니다!! 박수짝짝!!!  게임을 종료합니다.");
+                return true;
 
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-                case 7:
-                    if (strike == 7)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
-
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-                case 6:
-                    if (strike == 6)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
-
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-                case 5:
-                    if (strike == 5)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
-
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-                case 4:
-                    if (strike == 4)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
-
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-                case 3:
-                    if (strike == 3)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
-
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-                case 2:
-                    if (strike == 2)
-                    {
-                        Console.WriteLine($"정답입니다!! 박수짝짝!!! 총{round}를 진행했습니다. 게임을 종료합니다.");
-                        break;
-
-                    }
-                    else if (strike == 0 && ball == 0)
-                    {
-                        Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
-                        round++;
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
-                        round++;
-
-                    }
-                    break;
-
-                default:
-                    break;
             }
-            return round;
+            else if (strike == 0 && ball == 0)
+            {
+                Console.WriteLine($"모든 숫자가 맞지않습니다 아웃!!!");
+                
+
+            }
+            else
+            {
+                Console.WriteLine($"틀렸습니다. S:{strike}\t\tB:{ball}");
+                
+
+            }
+            return false;
         }
+            
+        
        
     }
 }
