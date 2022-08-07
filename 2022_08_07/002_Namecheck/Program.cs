@@ -3,11 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
+
 
 namespace _002_Namecheck
 {
     class Program
     {
+        static void namesort(List<string> myList)
+        {
+            string temp = " ";
+            for (int i = 0; i < myList.Count; i++)
+            {
+                char[] ArrayList = myList[i].ToCharArray();
+                for (int j = 0; j < myList.Count; j++)
+                {
+                    char[] ArrayList2 = myList[j].ToCharArray();
+                    if ((int)ArrayList[0] < (int)ArrayList2[0] && i != j)
+                    {
+                        temp = myList[i];
+                        myList[i] = myList[j];
+                        myList[j] = temp;
+                    }
+                }
+
+            }
+            
+        }
         static void Main(string[] args)
         {
 
@@ -19,148 +41,121 @@ namespace _002_Namecheck
             //김 = 44608
             //유 = 50976
             //최 = 52572
-            string[] inputname = { "조재광","김소원", "유승호", "유승민" };
-            
-           
-            string[] arraystring = new string[5];
-            //name[0];
-            /*            int intname = Convert.ToInt32(name[0]);
 
-                        int intname1 = Convert.ToInt32(name[4]);
+            List<string> myList = new List<string>();
+            myList.Add("조재광");
+            myList.Add("김소원");
+            myList.Add("유승호");
+            myList.Add("유승민");
 
-                        int intname2 = Convert.ToInt32(name[8]);
-                        int intname3 = Convert.ToInt32(name[12]);*/
-
-            for (int i = 0; i < inputname.Length; i++)
+            string temp = " ";
+            namesort(myList);
+            for (int i = 0; i < myList.Count; i++)
             {
-                char[] arrayname = inputname[i];
-                
-
-            }
-            Console.WriteLine();
-            int k = 0;
-            for (int i = 0; i < arrayint.Length; i++)
-            {
-                for (int j = 0; j < arrayint.Length; j++)
+                char[] ArrayList = myList[i].ToCharArray();
+                for (int j = 0; j < myList.Count; j++)
                 {
-                    if (arrayint[i] < arrayint[j])
+                    char[] ArrayList2 = myList[j].ToCharArray();
+                    if ((int)ArrayList[0] == (int)ArrayList2[0] && (int)ArrayList[1] < (int)ArrayList2[1] && i != j)
                     {
-                        k = arrayint[i];
-                        arrayint[i] = arrayint[j];
-                        arrayint[j] = k;
-
-                       // arrayint[j] = arrayint[i];
-
+                        temp = myList[i];
+                        myList[i] = myList[j];
+                        myList[j] = temp;
                     }
-                    
                 }
 
-               
             }
-            k = 0;
-            for (int i = 0; i < arraysecond.Length; i++)
+            for (int i = 0; i < myList.Count; i++)
             {
-                for (int j = 0; j < arraysecond.Length; j++)
+                char[] ArrayList = myList[i].ToCharArray();
+                for (int j = 0; j < myList.Count; j++)
                 {
-                    if (arraysecond[i] < arraysecond[j])
+                    char[] ArrayList2 = myList[j].ToCharArray();
+                    if ((int)ArrayList[0] == (int)ArrayList2[0] && (int)ArrayList[1] == (int)ArrayList2[1] && (int)ArrayList[2] < (int)ArrayList2[2] && i != j)
                     {
-                        k = arraysecond[i];
-                        arraysecond[i] = arraysecond[j];
-                        arraysecond[j] = k;
-
-                        // arrayint[j] = arrayint[i];
-
+                        temp = myList[i];
+                        myList[i] = myList[j];
+                        myList[j] = temp;
                     }
-
                 }
 
-
             }
-            k = 0;
-            for (int i = 0; i < arrayThird.Length; i++)
+            WriteLine($"{myList[0]}, {myList[1]}, {myList[2]}, {myList[3]}");
+
+            List<string> myList2 = new List<string>();
+            myList.Add("조재광");
+            myList.Add("김소원");
+            myList.Add("유승호");
+            myList.Add("유승민");
+            myList.Add("유승재");
+            myList.Add("이승호");
+            myList.Add("이호승");
+
+            string temp2 = "";
+            for (int i = 0; i < myList.Count; ++i)
             {
-                for (int j = 0; j < arrayThird.Length; j++)
+                char[] arr1 = myList[i].ToCharArray();
+
+                for (int j = 0; j < myList.Count; ++j)
                 {
-                    if (arrayThird[i] < arrayThird[j])
+                    char[] arr2 = myList[j].ToCharArray();
+
+                    if ((int)arr1[0] < (int)arr2[0] && i != j)
                     {
-                        k = arrayThird[i];
-                        arrayThird[i] = arrayThird[j];
-                        arrayThird[j] = k;
+                        temp = myList[i];
+                        myList[i] = myList[j];
+                        myList[j] = temp;
 
-                        // arrayint[j] = arrayint[i];
-
+                        continue;
                     }
-
-                }
-
-
-            }
-            for (int i = 0; i < arrayint.Length; i++)
-            {
-                for (int p = 0; p < inputname.Length; p++)
-                {
-                    if (arrayint[i] == Convert.ToInt32(inputname[p % 4]))
-                    {
-                        Console.Write($"{inputname[p]}");
-
-                        //Console.Write($" arraysecond[i] : {arraysecond[i]},inputname[p+1] : { Convert.ToInt32(inputname[p + 1])}");
-
-                        //Console.WriteLine($" arrayThird[i] : {i},{arrayThird[i]},inputname[p+2] : { Convert.ToInt32(inputname[p + 2])}");
-                        // Console.Write($"{inputname[p + 1]}");
-
-
-                        /*                      Console.Write($"{inputname[p + 1]}");
-                                                Console.Write($"{inputname[p + 2]}");*/
-                        
-
-
-                    }
-
-                     //&& arrayThird[i] == Convert.ToInt32(inputname[p])
-                    /*                    if (arraysecond[i] == Convert.ToInt32(inputname[p]))
-                                        {
-                                            Console.Write($"{inputname[p]}");
-
-                                        }*/
-                    //Console.Write($"{inputname[p]}");
-
-                    /*                    if (arrayThird[i] == Convert.ToInt32(inputname[p]))
-                                        {
-                                            Console.Write($"{inputname[p]}\n");
-                                            continue;
-                                        }*/
-
-
-
                 }
             }
-            Console.WriteLine();
-            // 성이 빠른순으로 출력되야함
-            // 성이 빠른순인데 성이 같을때 두번째 글자나 세번째 글자가 빠른 순으로 출력 할수 있어야함
-            Console.WriteLine($"{arrayint[0]},{arrayint[1]},{arrayint[2]},{arrayint[3]}");
-            Console.WriteLine($"{arraysecond[0]},{arraysecond[1]},{arraysecond[2]},{arraysecond[3]}");
-            Console.WriteLine($"{arrayThird[0]},{arrayThird[1]},{arrayThird[2]},{arrayThird[3]}");
-            // TODO: 여기에 응용 프로그램을 시작하는 코드를 추가합니다.       
-            /*            string str = "ㄱㄴㄷ";        
-                        char[] charArray = str.ToCharArray();   
-                        Console.WriteLine("Char Array");
-                                for(int i=0;i<charArray.Length;i++)
-                        {
-                            Console.WriteLine((int)charArray[i]);
-                        }
-                               
-                        foreach( char a in charArray )   
-                            Console.WriteLine("{0}", (int)a);
 
-                        Console.WriteLine(); 
-                        byte[] byteArray = System.Text.ASCIIEncoding.Default.GetBytes(str);  
-                        Console.WriteLine("Byte Array"); 
-                        for(int i=0;i<byteArray.Length;i++) 
-                              Console.WriteLine(byteArray[i]);  
-                        foreach( char a in byteArray )
-                        { 
-                            Console.WriteLine("{0}", (int)a);}*/
+            temp = "";
+            for (int i = 0; i < myList.Count; ++i)
+            {
+                char[] arr1 = myList[i].ToCharArray();
 
+                for (int j = 0; j < myList.Count; ++j)
+                {
+                    char[] arr2 = myList[j].ToCharArray();
+
+                    if ((int)arr1[0] == (int)arr2[0] && (int)arr1[1] < (int)arr2[1] && i != j)
+                    {
+                        temp = myList[i];
+                        myList[i] = myList[j];
+                        myList[j] = temp;
+
+                        continue;
+                    }
+                }
+            }
+
+            temp = "";
+            for (int i = 0; i < myList.Count; ++i)
+            {
+                char[] arr1 = myList[i].ToCharArray();
+
+                for (int j = 0; j < myList.Count; ++j)
+                {
+                    char[] arr2 = myList[j].ToCharArray();
+
+                    if ((int)arr1[0] == (int)arr2[0] && (int)arr1[1] == (int)arr2[1] && (int)arr1[2] < (int)arr2[2] && i != j)
+                    {
+                        temp = myList[i];
+                        myList[i] = myList[j];
+                        myList[j] = temp;
+
+                        continue;
+                    }
+                }
+            }
+
+            WriteLine(myList[0] + " " + myList[1] + " " + myList[2] + " " + myList[3] + " " + myList[4] + " " + myList[5] + " " + myList[6]);
+
+            ReadKey();
         }
     }
 }
+
+        
