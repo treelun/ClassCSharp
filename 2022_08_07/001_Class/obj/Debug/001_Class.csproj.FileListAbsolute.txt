@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\bin\Debug\001_Class.exe.config
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\bin\Debug\001_Class.exe
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\bin\Debug\001_Class.pdb
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\obj\Debug\001_Class.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\obj\Debug\001_Class.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\obj\Debug\001_Class.exe
+C:\Users\admin\Documents\GitHub\ClassCSharp\2022_08_07\001_Class\obj\Debug\001_Class.pdb
