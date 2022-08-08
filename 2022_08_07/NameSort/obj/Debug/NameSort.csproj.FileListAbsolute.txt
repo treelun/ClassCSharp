@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\bin\Debug\NameSort.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\bin\Debug\NameSort.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\bin\Debug\NameSort.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\obj\Debug\NameSort.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\obj\Debug\NameSort.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\obj\Debug\NameSort.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\2022_08_07\NameSort\obj\Debug\NameSort.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4074102-2204-4084-B065-A6DB5DB07A82}</ProjectGuid>
+    <ProjectGuid>{2BF731C0-9207-4D80-BFC2-F2717264CCC7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rullet</RootNamespace>
-    <AssemblyName>Rullet</AssemblyName>
+    <RootNamespace>Gotcha</RootNamespace>
+    <AssemblyName>Gotcha</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,25 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractCharacter.cs" />
-    <Compile Include="abstractItem.cs" />
-    <Compile Include="AdamanSword.cs" />
-    <Compile Include="BibranumSword.cs" />
-    <Compile Include="BronzeDagger.cs" />
-    <Compile Include="Character.cs" />
-    <Compile Include="DarkmetterSword.cs" />
-    <Compile Include="Glove.cs" />
-    <Compile Include="Gotha.cs" />
-    <Compile Include="index.cs" />
-    <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rabit.cs" />
-    <Compile Include="Smith.cs" />
-    <Compile Include="StillSword.cs" />
-    <Compile Include="StoneSword.cs" />
-    <Compile Include="TitanumSword.cs" />
-    <Compile Include="Woodstick.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

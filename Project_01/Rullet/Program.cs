@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using static System.Console;
+
 
 namespace Rullet
 {
+
     class Program
     {
         //1.가챠 만들기
@@ -23,25 +23,115 @@ namespace Rullet
         //4.주인공 캐릭터 생성, 무기착용, 체력 stat 있어야함
         //몬스터를 한번에 못죽일시 데미지 들어옴
         //주인공 공격먼저 -> 몬스터 공격
-        const uint MAX_ARRAY = 20;
+        /*        0. 편하게 최상단에
+        using static System.Console; 을 적고 시작하세요
+        System.Console 을 스킵할 수 있습니다.
+
+        1. 방향키 입력 방식
+                        ConsoleKeyInfo key = Console.ReadKey(true);
+                        switch (key.Key)
+                        {
+                            case ConsoleKey.UpArrow:
+                                break;
+                            case ConsoleKey.DownArrow:
+                                break;
+                            case ConsoleKey.Enter:
+                                break;
+                        }
+
+        2.원하는 위치에 커서 두기
+           SetCursorPosition( x 좌표 , y 좌표 );
+
+        3.화면 전체 지우기
+           Clear();
+
+        4.글자 꾸미기
+        한번 바꾸면 이후로 모두 적용이 됩니다.
+        때문에, 원하지 않는다면 원래대로 돌려놔야 합니다.
+           4-1. 글자 바탕색(원래 검은색이기 때문에 다시 검은색으로 돌려놓아야함)
+                       BackgroundColor = ConsoleColor.Yellow;
+        Write("★☆");
+        BackgroundColor = ConsoleColor.Black;
+
+        4 - 2.글자 색 바꾸기
+              Console.ForegroundColor = ConsoleColor.Blue;
+        Write("★☆");
+        Console.ForegroundColor = ConsoleColor.White;
+
+        5.잠시 대기하기
+        1000 이 1초
+           Thread.Sleep(1000); //1초 대기. 1초후에 뒤에 내용이 실행됨
+        */
+        
         static void Main(string[] args)
         {
-            int coin = 10000;
+            bool Start = false;
+            int posY = 0;
+            Console.SetWindowSize(150, 30);
+            Gotha got = new Gotha(); // 아이템뽑기 클래스
 
-            string weapon = "나뭇가지";
-            string weapon2 = "권투글러브";
-            string weapon3 = "돌검";
-            string weapon4 = "청동검";
-            string weapon5 = "강철검";
-            string weapon6 = "티타늄검";
-            string weapon7 = "아다만티움검";
-            string weapon8 = "비뷰라늄검";
-            string weapon9 = "암흑물질검";
-            Character[] character = new Character[MAX_ARRAY];
-            character[0] = new Rabit();
+            SetCursorPosition(50, 20);
+            Console.WriteLine("아이템 강화하기!");
+
+
+            SetCursorPosition(30, 25);
+            Console.WriteLine("시작");
+            SetCursorPosition(30, 26);
+            Console.WriteLine("끝내기는 없습니다 강제 게임진행!!");
+
             
+            do
+            {
+                for (int k = 0; k < 2; k++)
+                {
+                    SetCursorPosition(25, k + 25);
+                    Write("  ");
+                }
+                SetCursorPosition(25, posY + 25);
+                Write("▶");
+
+                ConsoleKeyInfo key = Console.ReadKey(true);
 
 
+                switch (key.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        posY--;
+                        if (posY < 0)
+                        {
+                            posY = 1;
+                        }
+                        break;
+                    case ConsoleKey.DownArrow:
+                        posY++;
+                        if (posY > 1)
+                        {
+                            posY = 0;
+                        }
+                        break;
+                    case ConsoleKey.Enter:
+                        Start = true;
+                        Console.Clear();
+                        break;
+                }
+
+            } while (!Start);
+
+            
+            if (Start == true)
+            {
+                
+                got.Gotcha();
+            }
+            //got.Gotcha(); //아이템뽑기 & 아이템 강화
+
+
+            ReadKey();
         }
+
+
+        
+
+        
     }
 }

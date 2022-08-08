@@ -40,7 +40,7 @@ namespace Rullet
                 IsAlive = false;
             }
 
-            return IsAlive; //공격하는 대상에게 리턴하는 경험치
+            return IsAlive; //대상이 죽었는지 살았는지 처리
         }
         public string GetMonsterLevel()
         {
