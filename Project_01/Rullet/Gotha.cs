@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
 
@@ -10,12 +11,11 @@ namespace Rullet
     class Gotha : Item
     {
         
-
-        public void Gotcha()
+        public void Setting(abstractItem[] item)
         {
-            abstractItem[] item = new abstractItem[1000];
-            Random ran = new Random();
             
+            
+
             for (int i = 0; i < item.Length; i++)
             {
                 if (i <= 300) //30%
@@ -55,44 +55,54 @@ namespace Rullet
                     item[i] = new DarkmetterSword();
                 }
             }
-
-            int intputnum = 0; //랜덤값을 받아와서 저장함 (저장받지 않으면 뽑기종료시 다른값을 받아옴)
             
+        }
+        public void Gotcha(abstractItem[] item, ref int RandomNum, ref int coin)
+        {
+            
+            Setting(item);
+            MainMenu main = new MainMenu();
+            int posY = 0;
             int count = 0;
+            
+            string first = "뽑기 시도";
+            string Second = "뽑기 끝내기";
             while (true)
             {
                 BackgroundColor = ConsoleColor.Black;
                 ForegroundColor = ConsoleColor.Red;
-                SetCursorPosition(40, 25);
-                Console.Write("뽑기를 진행 하시겠습니까? (Y/N)");
 
-                string Answer = Console.ReadLine();
-                
-                
-                if (Answer == "Y" && coin > 0)
+                main.Menu(ref posY, ref first, ref Second);
+                /*                SetCursorPosition(40, 25);
+                                Console.Write("뽑기를 진행 하시겠습니까? (Y/N)");
+
+                                string Answer = Console.ReadLine();*/
+
+
+                if (posY == 0 && coin > 0)
                 {
                     Console.Clear();
-                    intputnum = ran.Next(0, 1000);
                     
-                    item[intputnum].PrintStat();
+
+                    item[RandomNum].PrintStat();
                     count++;
                     coin -= 500;
                     SetCursorPosition(130, 0);
                     Console.WriteLine($"잔여코인 {coin}");
                 }
-                
-                else if (Answer == "N" && coin > 0)
+
+                else if (posY == 1 && coin > 0)
                 {
                     Console.Clear();
                     SetCursorPosition(130, 27);
                     Console.WriteLine($"뽑기를 종료합니다.");
                     SetCursorPosition(130, 28);
                     Console.WriteLine($"총뽑기횟수 {count}");
-                    item[intputnum].PrintStat();
-                    item[intputnum].smith();
+                    item[RandomNum].PrintStat();
+                    //item[RandomNum].Smith();
                     break;
                 }
-                else if (coin < 0)
+                else if (coin < 0 && posY == 0)
                 {
                     SetCursorPosition(40, 20);
                     Console.WriteLine($"코인이 부족합니다. 게임을 종료합니다.");
@@ -108,5 +118,6 @@ namespace Rullet
             }
             
         }
+
     }
 }

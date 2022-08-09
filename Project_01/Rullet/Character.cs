@@ -13,6 +13,7 @@ namespace Rullet
         protected uint Attack_Power;
         protected bool IsAlive;
         protected string MonsterLevel;
+        protected uint PlayerLevel;
         public Character()
         {
             IsAlive = true;
@@ -22,6 +23,12 @@ namespace Rullet
         {
             Console.WriteLine($"Name : {Name}  MonsterLevel : {MonsterLevel}");
             Console.WriteLine($"Hp : {Hp}");
+
+        }
+        public void PrintPlayerStat()
+        {
+            Console.WriteLine($"Name : {Name}  PlayerLevel : {PlayerLevel}");
+            Console.WriteLine($"Hp : {Hp}  Attack_Power : {Attack_Power} ");
 
         }
         public string GetName()

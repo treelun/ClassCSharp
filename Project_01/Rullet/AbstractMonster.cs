@@ -6,19 +6,13 @@ using System.Threading.Tasks;
 
 namespace Rullet
 {
-    abstract class abstractItem : Item
+    abstract class AbstractMonster : Character
     {
-        public abstractItem() : base()
+        public AbstractMonster() : base()
         {
+
             InitData();
-            
         }
-
         public abstract void InitData();
-
-        public abstract void Smith(ref int coin);
-       
-
-
     }
 }

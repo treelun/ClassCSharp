@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace Rullet
 {
-    class Rabit : AbstractMonster
+    class Player : AbstractCharacter
     {
         public override void InitData()
         {
-            Hp = 100;
+            
+            
+            Hp = 300;
 
 
-            Attack_Power = 2;
+            Attack_Power = 0;
 
-            Name = "토 끼";
+            Name = "주인공";
 
-            MonsterLevel = "F";
+            PlayerLevel = 0;
 
-            PrintStat();
+            PrintPlayerStat();
         }
+
+
     }
-
-
 }

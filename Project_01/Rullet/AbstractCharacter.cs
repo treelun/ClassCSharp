@@ -10,6 +10,7 @@ namespace Rullet
     {
         public AbstractCharacter() : base()
         {
+            
             InitData();
         }
         public abstract void InitData();

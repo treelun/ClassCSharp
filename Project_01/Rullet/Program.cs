@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using static System.Console;
 
 
@@ -62,76 +64,75 @@ namespace Rullet
         1000 이 1초
            Thread.Sleep(1000); //1초 대기. 1초후에 뒤에 내용이 실행됨
         */
-        
+
+
+
         static void Main(string[] args)
         {
-            bool Start = false;
-            int posY = 0;
-            Console.SetWindowSize(150, 30);
+            Console.SetWindowSize(150, 30); // 콘솔창 크기 조절
+            MainMenu main = new MainMenu(); // 메인화면 출력을 위한 클래스 호출
+            abstractItem[] item = new abstractItem[1000]; // 가챠를 진행하기위해 배열 생성
+            Random random = new Random(); // 랜덤 인수 필요로 랜덤 선언
+
+
             Gotha got = new Gotha(); // 아이템뽑기 클래스
+            int posY = 0;
+            string first = "아이템 뽑기 시작";
+            string Second = "아이템 강화 시작";
+            string Third = "끝내기";
+            int coin = 30000;
+            bool _isFinish = false;
+            bool _isStart = false;
 
-            SetCursorPosition(50, 20);
-            Console.WriteLine("아이템 강화하기!");
 
-
-            SetCursorPosition(30, 25);
-            Console.WriteLine("시작");
-            SetCursorPosition(30, 26);
-            Console.WriteLine("끝내기는 없습니다 강제 게임진행!!");
-
-            
-            do
+            int randomValue = 0;
+            while (!_isFinish)
             {
-                for (int k = 0; k < 2; k++)
+                if (_isStart) //시작(enter)키를 누른 경우
                 {
-                    SetCursorPosition(25, k + 25);
-                    Write("  ");
+                    
+
+                    if (posY == 0)
+                    {
+                        randomValue = random.Next(0, 1000);
+                        got.Gotcha(item, ref randomValue, ref coin);//가챠진행
+
+                        _isStart = false;
+                        continue;
+                    }
+                    else if(posY == 1)
+                    {
+                        item[randomValue].Smith(ref coin);
+                        _isStart = false;
+                        continue;
+                    }
+                    else if (posY == 2)
+                    {
+
+                        _isFinish = true;
+                        break;
+                    }  
+
+/*                        
+                        
+
+                            
+                        case 3: //종료
+                            _isFinish = true;
+                            break;*/
+                    
                 }
-                SetCursorPosition(25, posY + 25);
-                Write("▶");
-
-                ConsoleKeyInfo key = Console.ReadKey(true);
-
-
-                switch (key.Key)
+                else //대기화면인 경우
                 {
-                    case ConsoleKey.UpArrow:
-                        posY--;
-                        if (posY < 0)
-                        {
-                            posY = 1;
-                        }
-                        break;
-                    case ConsoleKey.DownArrow:
-                        posY++;
-                        if (posY > 1)
-                        {
-                            posY = 0;
-                        }
-                        break;
-                    case ConsoleKey.Enter:
-                        Start = true;
-                        Console.Clear();
-                        break;
+                    main.Title();
+                    main.mainMenu(ref posY,ref first, ref Second, ref Third);
+                    _isStart = true;
+                    Clear();
                 }
 
-            } while (!Start);
-
-            
-            if (Start == true)
-            {
-                
-                got.Gotcha();
-            }
-            //got.Gotcha(); //아이템뽑기 & 아이템 강화
-
-
-            ReadKey();
+            } 
+           
         }
-
-
-        
-
-        
+ 
     }
 }
