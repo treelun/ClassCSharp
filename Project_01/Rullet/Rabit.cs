@@ -19,7 +19,7 @@ namespace Rullet
 
             MonsterLevel = "F";
 
-            PrintStat();
+            //PrintStat();
         }
     }
 

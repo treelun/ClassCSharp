@@ -69,17 +69,18 @@ namespace Rullet
 
         static void Main(string[] args)
         {
-            Console.SetWindowSize(150, 30); // 콘솔창 크기 조절
+            Console.SetWindowSize(110, 30); // 콘솔창 크기 조절
             MainMenu main = new MainMenu(); // 메인화면 출력을 위한 클래스 호출
             abstractItem[] item = new abstractItem[1000]; // 가챠를 진행하기위해 배열 생성
             Random random = new Random(); // 랜덤 인수 필요로 랜덤 선언
-
+            Player player = new Player();
 
             Gotha got = new Gotha(); // 아이템뽑기 클래스
             int posY = 0;
             string first = "아이템 뽑기 시작";
             string Second = "아이템 강화 시작";
-            string Third = "끝내기";
+            string Third = "플레이어 정보";
+            string Fourth = "끝내기";
             int coin = 30000;
             bool _isFinish = false;
             bool _isStart = false;
@@ -95,7 +96,7 @@ namespace Rullet
                     if (posY == 0)
                     {
                         randomValue = random.Next(0, 1000);
-                        got.Gotcha(item, ref randomValue, ref coin);//가챠진행
+                        got.Gotcha(item, ref randomValue, ref coin, posY);//가챠진행
 
                         _isStart = false;
                         continue;
@@ -108,24 +109,29 @@ namespace Rullet
                     }
                     else if (posY == 2)
                     {
+                        player.PrintPlayerStat(item ,ref randomValue);
+                        _isStart = true;
+                        break;
+                    }
+                    else if (posY == 3)
+                    {
 
                         _isFinish = true;
                         break;
-                    }  
+                    }
+                    /*                        
 
-/*                        
-                        
 
-                            
-                        case 3: //종료
-                            _isFinish = true;
-                            break;*/
-                    
+
+                                            case 3: //종료
+                                                _isFinish = true;
+                                                break;*/
+
                 }
                 else //대기화면인 경우
                 {
                     main.Title();
-                    main.mainMenu(ref posY,ref first, ref Second, ref Third);
+                    main.mainMenu(ref posY,ref first, ref Second, ref Third, ref Fourth);
                     _isStart = true;
                     Clear();
                 }

@@ -53,14 +53,12 @@
     <Compile Include="DarkmetterSword.cs" />
     <Compile Include="Glove.cs" />
     <Compile Include="Gotha.cs" />
-    <Compile Include="index.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rabit.cs" />
-    <Compile Include="Smith.cs" />
     <Compile Include="StillSword.cs" />
     <Compile Include="StoneSword.cs" />
     <Compile Include="TitanumSword.cs" />

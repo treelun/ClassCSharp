@@ -11,8 +11,11 @@ namespace Rullet
         public AbstractCharacter() : base()
         {
             
-            InitData();
+            int RandomValue = 0;
+            abstractItem[] item = new abstractItem[RandomValue];
+            InitData(item,ref RandomValue);
+
         }
-        public abstract void InitData();
+        public abstract void InitData(abstractItem[] item, ref int RandomValue);
     }
 }

@@ -57,46 +57,39 @@ namespace Rullet
             }
             
         }
-        public void Gotcha(abstractItem[] item, ref int RandomNum, ref int coin)
+        public void Gotcha(abstractItem[] item, ref int RandomNum, ref int coin, int posY)
         {
             
             Setting(item);
             MainMenu main = new MainMenu();
-            int posY = 0;
+            posY = 0;
             int count = 0;
             
-            string first = "뽑기 시도";
-            string Second = "뽑기 끝내기";
+            
             while (true)
             {
                 BackgroundColor = ConsoleColor.Black;
                 ForegroundColor = ConsoleColor.Red;
 
-                main.Menu(ref posY, ref first, ref Second);
-                /*                SetCursorPosition(40, 25);
-                                Console.Write("뽑기를 진행 하시겠습니까? (Y/N)");
-
-                                string Answer = Console.ReadLine();*/
-
 
                 if (posY == 0 && coin > 0)
                 {
                     Console.Clear();
-                    
-
                     item[RandomNum].PrintStat();
                     count++;
                     coin -= 500;
-                    SetCursorPosition(130, 0);
+                    SetCursorPosition(95, 0);
                     Console.WriteLine($"잔여코인 {coin}");
+                    Thread.Sleep(500);
+                    break;
                 }
 
                 else if (posY == 1 && coin > 0)
                 {
                     Console.Clear();
-                    SetCursorPosition(130, 27);
+                    SetCursorPosition(95, 27);
                     Console.WriteLine($"뽑기를 종료합니다.");
-                    SetCursorPosition(130, 28);
+                    SetCursorPosition(95, 28);
                     Console.WriteLine($"총뽑기횟수 {count}");
                     item[RandomNum].PrintStat();
                     //item[RandomNum].Smith();

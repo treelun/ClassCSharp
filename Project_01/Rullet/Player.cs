@@ -8,7 +8,7 @@ namespace Rullet
 {
     class Player : AbstractCharacter
     {
-        public override void InitData()
+        public override void InitData(abstractItem[] item, ref int RandomValue)
         {
             
             
@@ -21,7 +21,7 @@ namespace Rullet
 
             PlayerLevel = 0;
 
-            PrintPlayerStat();
+            //PrintPlayerStat(item, ref RandomValue);
         }
 
 

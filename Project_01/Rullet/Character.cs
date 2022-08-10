@@ -25,10 +25,10 @@ namespace Rullet
             Console.WriteLine($"Hp : {Hp}");
 
         }
-        public void PrintPlayerStat()
+        public void PrintPlayerStat(abstractItem[] item, ref int RandomValue)
         {
             Console.WriteLine($"Name : {Name}  PlayerLevel : {PlayerLevel}");
-            Console.WriteLine($"Hp : {Hp}  Attack_Power : {Attack_Power} ");
+            Console.WriteLine($"Hp : {Hp}  Attack_Power : {item[RandomValue].WeaponDamage} ");
 
         }
         public string GetName()

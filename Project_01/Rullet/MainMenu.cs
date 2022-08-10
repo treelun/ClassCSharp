@@ -9,27 +9,30 @@ namespace Rullet
 {
     class MainMenu
     {
-        public void mainMenu(ref int posY, ref string first, ref string Second, ref string Third)
+        public void mainMenu(ref int posY, ref string first, ref string Second, ref string Third, ref string Fourth)
         {
             
             bool Start = false;
-            SetCursorPosition(30, 25);
+            SetCursorPosition(20, 20);
             WriteLine(first);
 
-            SetCursorPosition(30, 26);
+            SetCursorPosition(20, 21);
             WriteLine(Second);
 
-            SetCursorPosition(30, 27);
+            SetCursorPosition(20, 22);
             WriteLine(Third);
+
+            SetCursorPosition(20, 23);
+            WriteLine(Fourth);
 
             do
             {
                 for (int k = 0; k < 3; k++)
                 {
-                    SetCursorPosition(25, k + 25);
+                    SetCursorPosition(17, k + 20);
                     Write("  ");
                 }
-                SetCursorPosition(25, posY + 25);
+                SetCursorPosition(17, posY + 20);
                 Write("▶");
 
                 ConsoleKeyInfo key = ReadKey(true);
@@ -41,12 +44,12 @@ namespace Rullet
                         posY--;//(Y축 방향으로 위로1칸)
                         if (posY < 0)//(posY값이 0보다 작으면 원하는 출력값이 나오지않으므로 0보다 작을시 1로 바꿔줌)
                         {
-                            posY = 2;
+                            posY = 3;
                         }
                         break;
                     case ConsoleKey.DownArrow:
                         posY++;//(Y축 방향으로 아래로1칸)
-                        if (posY > 2)//(posY값이 1보다 클경우 원하는 출력값이 나오지않기에 0으로 돌려줌)
+                        if (posY > 3)//(posY값이 1보다 클경우 원하는 출력값이 나오지않기에 0으로 돌려줌)
                         {
                             posY = 0;
                         }
@@ -63,21 +66,22 @@ namespace Rullet
 
         public void Title()
         {
-            SetCursorPosition(50, 15);
-            WriteLine(@"
-                                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                                @@@        아이템 강화하기!       @@@
-                                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            SetCursorPosition(32, 5);
+            WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            SetCursorPosition(32, 6);
+            WriteLine("@@@        아이템 강화하기!       @@@");
+            SetCursorPosition(32, 7);
+            WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         }
 
-        public void Menu(ref int posY, ref string first, ref string Second)
+        public void Menu(ref int posY, ref string first, ref string Second, bool Start)
         {
 
-            bool Start = false;
-            SetCursorPosition(30, 25);
+            
+            SetCursorPosition(20, 20);
             WriteLine(first);
 
-            SetCursorPosition(30, 26);
+            SetCursorPosition(20, 21);
             WriteLine(Second);
 
 
@@ -86,10 +90,10 @@ namespace Rullet
             {
                 for (int k = 0; k < 2; k++)
                 {
-                    SetCursorPosition(25, k + 25);
+                    SetCursorPosition(17, k + 20);
                     Write("  ");
                 }
-                SetCursorPosition(25, posY + 25);
+                SetCursorPosition(17, posY + 20);
                 Write("▶");
 
                 ConsoleKeyInfo key = ReadKey(true);
