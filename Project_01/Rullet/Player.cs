@@ -9,18 +9,18 @@ namespace Rullet
 {
     class Player : AbstractCharacter
     {
-        public Player(abstractItem item, ref int coin) : base(item, ref coin)
+        public Player(ref int coin) : base(ref coin)
         {
         }
 
-        public override void InitData(abstractItem item,ref int coin)
+        public override void InitData(ref int coin)
         {
 
-
+            
             Hp = 300;
 
 
-            Attack_Power = item.WeaponDamage;
+            Attack_Power = 0;
 
             Name = "주인공";
 

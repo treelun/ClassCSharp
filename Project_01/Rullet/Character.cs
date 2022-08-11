@@ -10,11 +10,11 @@ namespace Rullet
     {
         public int Hp;
         protected string Name;
-        protected int Attack_Power;
+        public int Attack_Power;
         protected bool IsAlive;
         protected string MonsterLevel;
         protected uint PlayerLevel;
-        protected int Coin;
+        public int Coin;
         public int Exp;
         protected int GiveExp;
 

@@ -9,11 +9,11 @@ namespace Rullet
 {
     abstract class AbstractCharacter : Character
     {
-        public AbstractCharacter (abstractItem item, ref int coin) : base()
+        public AbstractCharacter (ref int coin) : base()
         {
-            InitData(item, ref coin);
+            InitData(ref coin);
         }
-        public abstract void InitData(abstractItem item, ref int coin);
+        public abstract void InitData(ref int coin);
 
         protected void SetAttack(AbstractCharacter player)
         {
@@ -75,6 +75,7 @@ namespace Rullet
                             Console.WriteLine("레벨업으로 인해 체력이 100 상승");
                             Levelup();
                             Hp += 100;
+                            Exp = 0;
                         }
                         break;
                     }
