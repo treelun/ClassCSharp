@@ -5,15 +5,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
 
-
 namespace Rullet
 {
-    class AdamanSword : abstractItem
+    class Weapon_TitanumSword : abstractItem
     {
         public override void InitData()
         {
-            WeaponName = "아다만티움소드";
-            WeaponDamage = 40;
+            WeaponName = "티타늄소드";
+            WeaponDamage = 30;
             WeaponLevel = 0;
 
             //PrintStat();

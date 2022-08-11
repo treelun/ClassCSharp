@@ -5,22 +5,20 @@ using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
 
+
 namespace Rullet
 {
-    class TitanumSword : abstractItem
+    class Weapon_BibranumSword : abstractItem
     {
         public override void InitData()
         {
-            WeaponName = "티타늄소드";
-            WeaponDamage = 30;
+            WeaponName = "비뷰라늄소드";
+            WeaponDamage = 50;
             WeaponLevel = 0;
 
             //PrintStat();
         }
 
-        public void Smith(ref int coin)
-        {
 
-        }
     }
 }

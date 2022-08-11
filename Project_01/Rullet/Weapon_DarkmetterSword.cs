@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace Rullet
 {
-    class DarkmetterSword : abstractItem
+    class Weapon_DarkmetterSword : abstractItem
 
     {
         public override void InitData()

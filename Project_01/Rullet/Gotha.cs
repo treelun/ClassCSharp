@@ -20,39 +20,39 @@ namespace Rullet
             {
                 if (i <= 300) //30%
                 {
-                    item[i] = new Woodstick();
+                    item[i] = new Weapon_Woodstick();
                 }
                 else if (i > 300 && i <= 500) // 20%
                 {
-                    item[i] = new Glove();
+                    item[i] = new Weapon_Glove();
                 }
                 else if (i > 500 && i <= 700) // 20%
                 {
-                    item[i] = new StoneSword();
+                    item[i] = new Weapon_StoneSword();
                 }
                 else if (i > 700 && i <= 800) //10%
                 {
-                    item[i] = new BronzeDagger();
+                    item[i] = new Weapon_BronzeDagger();
                 }
                 else if (i > 800 && i <= 900) //10%
                 {
-                    item[i] = new StillSword();
+                    item[i] = new Weapon_StillSword();
                 }
                 else if (i > 900 && i <= 960)//6%
                 {
-                    item[i] = new TitanumSword();
+                    item[i] = new Weapon_TitanumSword();
                 }
                 else if (i > 960 && i <= 980)//2%
                 {
-                    item[i] = new AdamanSword();
+                    item[i] = new Weapon_AdamanSword();
                 }
                 else if (i > 980 && i <= 995)//1.5%
                 {
-                    item[i] = new BibranumSword();
+                    item[i] = new Weapon_BibranumSword();
                 }
                 else if (i > 995 && i <= 1000)//0.5%
                 {
-                    item[i] = new DarkmetterSword();
+                    item[i] = new Weapon_DarkmetterSword();
                 }
             }
             

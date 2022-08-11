@@ -14,6 +14,10 @@ namespace Rullet
         protected bool IsAlive;
         protected string MonsterLevel;
         protected uint PlayerLevel;
+        protected int coin;
+        protected int Exp;
+        protected int GiveExp;
+
         public Character()
         {
             IsAlive = true;
@@ -25,12 +29,38 @@ namespace Rullet
             Console.WriteLine($"Hp : {Hp}");
 
         }
-        public void PrintPlayerStat(abstractItem[] item, ref int RandomValue)
+        public void PrintPlayerStat(abstractItem[] item, ref int RandomValue, ref int coin)
         {
             Console.WriteLine($"Name : {Name}  PlayerLevel : {PlayerLevel}");
             Console.WriteLine($"Hp : {Hp}  Attack_Power : {item[RandomValue].WeaponDamage} ");
+            Console.WriteLine($"보유 코인{coin}");
+        }
+
+        public int Damage(uint damage, ref int coin)
+        {
+            Hp -= damage;
+            if (Hp <= 0)
+            {
+                IsAlive = false;
+            }
+
+            return coin; //대상이 죽었는지 살았는지 처리
+        }
+        public void Attack(int gainExp)
+        {
+
+            Exp += gainExp;
 
         }
+        public string GetMonsterLevel()
+        {
+            return MonsterLevel;
+        }
+        public int GetCoin(ref int coin)
+        {
+            return coin;
+        }
+
         public string GetName()
         {
             return Name;
@@ -39,20 +69,9 @@ namespace Rullet
         {
             return Attack_Power;
         }
-        public bool Damage(uint damage)
+        public int GetExp()
         {
-            Hp -= damage;
-            if (Hp <= 0)
-            {
-                IsAlive = false;
-            }
-
-            return IsAlive; //대상이 죽었는지 살았는지 처리
+            return GiveExp;
         }
-        public string GetMonsterLevel()
-        {
-            return MonsterLevel;
-        }
-        
     }
 }

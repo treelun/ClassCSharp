@@ -117,6 +117,7 @@ namespace Rullet
                         break;
                     case ConsoleKey.Enter:
 
+                        
                         Start = true;
                         Clear();
                         break;

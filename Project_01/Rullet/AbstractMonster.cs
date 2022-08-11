@@ -13,6 +13,13 @@ namespace Rullet
 
             InitData();
         }
+        protected void SetAttack(AbstractMonster damageArmy, ref int coin)
+        {
+            damageArmy.Damage(this.Attack_Power, ref coin);
+            this.Attack(damageArmy.GetCoin(ref coin));
+        }
         public abstract void InitData();
+
+        public abstract void Attack(AbstractMonster damageArmy, ref int coin);
     }
 }

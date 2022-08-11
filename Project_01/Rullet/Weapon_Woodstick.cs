@@ -7,20 +7,20 @@ using static System.Console;
 
 namespace Rullet
 {
-    class StillSword : abstractItem
+    class Weapon_Woodstick : abstractItem
     {
+
         public override void InitData()
         {
-            WeaponName = "강철소드";
-            WeaponDamage = 20;
+            WeaponName = "나무막대기";
+            WeaponDamage = 5;
             WeaponLevel = 0;
 
             //PrintStat();
         }
 
-        public void Smith(ref int coin)
-        {
 
-        }
+
     }
 }
+

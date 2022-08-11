@@ -1,27 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using static System.Console;
+
 
 namespace Rullet
 {
-    class Rabit : AbstractMonster
+    class Weapon_AdamanSword : abstractItem
     {
         public override void InitData()
         {
-            Hp = 100;
-
-
-            Attack_Power = 2;
-
-            Name = "토 끼";
-
-            MonsterLevel = "F";
+            WeaponName = "아다만티움소드";
+            WeaponDamage = 40;
+            WeaponLevel = 0;
 
             //PrintStat();
         }
+
     }
-
-
 }

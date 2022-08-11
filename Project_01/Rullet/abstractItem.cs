@@ -17,7 +17,7 @@ namespace Rullet
 
         public abstract void InitData();
 
-        public void Smith(ref int coin)
+        public void Smith(ref int coin )
         {
             MainMenu main = new MainMenu();
             Random ran = new Random();
@@ -30,33 +30,39 @@ namespace Rullet
             {
                 BackgroundColor = ConsoleColor.Black;
                 ForegroundColor = ConsoleColor.Cyan;
+
                 main.Menu(ref posY, ref first, ref Second, false);
 
                 int num = ran.Next(0, 9);
                 if (WeaponLevel >= 0 && WeaponLevel < 5 && coin > 0 && true)
                 {
                     Completeindex(ref posY, ref coin, 2, 100, 100);
-                    //break;
+                    
                 }
                 else if (WeaponLevel >= 5 && WeaponLevel < 10 && num < 7 && true && coin > 0)
                 {
                     Completeindex(ref posY, ref coin, 5,  70, 500);
-                    //break;
+                    
                 }
-                else if (WeaponLevel > 5 && WeaponLevel <= 10 && num > 6 && coin > 0 && true)
+                else if (WeaponLevel > 5 && WeaponLevel < 10 && num > 6 && coin > 0 && true)
                 {
                     Faildindex(ref posY, ref coin, 5, 70, 500);
-                    //break;
+                   
+                }
+                else if (WeaponLevel == 10 && num > 2 && coin > 0 && true)
+                {
+                    Faildindex(ref posY, ref coin, 5, 70, 500);
+
                 }
                 else if (WeaponLevel >= 10 && WeaponLevel < 15 && num <= 2 && true && coin > 0 )
                 {
                     Completeindex(ref posY, ref coin, 10,  30, 1000);
-                    //break;
+                    
                 }
                 else if (WeaponLevel > 10 && WeaponLevel < 15 && num > 2 && coin > 0 && true)
                 {
                     Faildindex(ref posY, ref coin, 10, 30, 1000);
-                    //break;
+                    
                 }
 
 

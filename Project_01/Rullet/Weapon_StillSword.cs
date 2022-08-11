@@ -5,15 +5,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
 
-
 namespace Rullet
 {
-    class BibranumSword : abstractItem
+    class Weapon_StillSword : abstractItem
     {
         public override void InitData()
         {
-            WeaponName = "비뷰라늄소드";
-            WeaponDamage = 50;
+            WeaponName = "강철소드";
+            WeaponDamage = 20;
             WeaponLevel = 0;
 
             //PrintStat();

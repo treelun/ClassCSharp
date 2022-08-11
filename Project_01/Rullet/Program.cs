@@ -93,7 +93,7 @@ namespace Rullet
                 {
                     
 
-                    if (posY == 0)
+                    if (posY == 0)//아이템뽑기
                     {
                         randomValue = random.Next(0, 1000);
                         got.Gotcha(item, ref randomValue, ref coin, posY);//가챠진행
@@ -101,7 +101,7 @@ namespace Rullet
                         _isStart = false;
                         continue;
                     }
-                    else if(posY == 1)
+                    else if(posY == 1)//아이템 강화
                     {
                         item[randomValue].Smith(ref coin);
                         _isStart = false;
@@ -109,7 +109,7 @@ namespace Rullet
                     }
                     else if (posY == 2)
                     {
-                        player.PrintPlayerStat(item ,ref randomValue);
+                        player.PrintPlayerStat(item ,ref randomValue, ref coin);
                         _isStart = true;
                         break;
                     }
@@ -130,6 +130,8 @@ namespace Rullet
                 }
                 else //대기화면인 경우
                 {
+                    BackgroundColor = ConsoleColor.Black;
+                    ForegroundColor = ConsoleColor.White;
                     main.Title();
                     main.mainMenu(ref posY,ref first, ref Second, ref Third, ref Fourth);
                     _isStart = true;
