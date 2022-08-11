@@ -61,8 +61,7 @@ namespace Rullet
         {
             
             Setting(item);
-            MainMenu main = new MainMenu();
-            posY = 0;
+            
             int count = 0;
             
             

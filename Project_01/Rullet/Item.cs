@@ -12,7 +12,7 @@ namespace Rullet
     class Item
     {
         public string WeaponName;
-        public uint WeaponDamage;
+        public int WeaponDamage;
         public uint WeaponLevel;
         
 
@@ -28,7 +28,7 @@ namespace Rullet
             return WeaponName;
         }
 
-        public uint GetWeaponDamage()
+        public int GetWeaponDamage()
         {
             return WeaponDamage;
         }
@@ -45,7 +45,7 @@ namespace Rullet
             SetCursorPosition(60, 23);
             Console.WriteLine($"무기 공격력 : {WeaponDamage}, 강화레벨: {WeaponLevel}");
         }
-        public void Faildindex(ref int posY, ref int coin, uint Value, int per, int a)
+        public void Faildindex(ref int posY, ref int coin, int Value, int per, int a)
         {
             if (posY == 0)
             {
@@ -82,7 +82,7 @@ namespace Rullet
                 SetCursorPosition(95, 0);
                 Console.WriteLine($"잔여 코인{coin}");
 
-                Thread.Sleep(1000);
+                Thread.Sleep(700);
                 Clear();
 
             }
@@ -90,7 +90,7 @@ namespace Rullet
 
 
         }
-        public void Completeindex(ref int posY, ref int coin, uint Value, int per, int a)
+        public void Completeindex(ref int posY, ref int coin, int Value, int per, int a)
         {
             
             if (posY == 0)
@@ -127,7 +127,7 @@ namespace Rullet
                 SetCursorPosition(95, 0);
                 Console.WriteLine($"잔여 코인{coin}");
 
-                Thread.Sleep(1000);
+                Thread.Sleep(700);
                 Clear();
 
             }
@@ -277,7 +277,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
-            Thread.Sleep(500);
+            Thread.Sleep(300);
             Clear();
 
             SetCursorPosition(1, 3);
@@ -328,7 +328,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
-            Thread.Sleep(500);
+            Thread.Sleep(300);
             Clear();
             
 
@@ -381,7 +381,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
-            Thread.Sleep(500);
+            Thread.Sleep(300);
             Clear();
 
         }

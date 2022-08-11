@@ -8,14 +8,14 @@ namespace Rullet
 {
     class Character
     {
-        protected uint Hp;
+        public int Hp;
         protected string Name;
-        protected uint Attack_Power;
+        protected int Attack_Power;
         protected bool IsAlive;
         protected string MonsterLevel;
         protected uint PlayerLevel;
-        protected int coin;
-        protected int Exp;
+        protected int Coin;
+        public int Exp;
         protected int GiveExp;
 
         public Character()
@@ -25,18 +25,19 @@ namespace Rullet
 
         public void PrintStat()
         {
-            Console.WriteLine($"Name : {Name}  MonsterLevel : {MonsterLevel}");
-            Console.WriteLine($"Hp : {Hp}");
+            Console.WriteLine($"이름 : {Name}  몬스터 등급 : {MonsterLevel}");
+            Console.WriteLine($"체력 : {Hp}    공격력 : {Attack_Power}");
+            Console.WriteLine($"보유 코인{Coin}     경험치 : {GiveExp}");
 
         }
-        public void PrintPlayerStat(abstractItem[] item, ref int RandomValue, ref int coin)
+        public void PrintPlayerStat()
         {
-            Console.WriteLine($"Name : {Name}  PlayerLevel : {PlayerLevel}");
-            Console.WriteLine($"Hp : {Hp}  Attack_Power : {item[RandomValue].WeaponDamage} ");
-            Console.WriteLine($"보유 코인{coin}");
+            Console.WriteLine($"이름 : {Name}  레벨 : {PlayerLevel}");
+            Console.WriteLine($"체력 : {Hp}  공격력 : {Attack_Power} ");
+            Console.WriteLine($"보유 코인{Coin}     경험치 : {Exp}");
         }
 
-        public int Damage(uint damage, ref int coin)
+        public int Damage(int damage)
         {
             Hp -= damage;
             if (Hp <= 0)
@@ -44,34 +45,35 @@ namespace Rullet
                 IsAlive = false;
             }
 
-            return coin; //대상이 죽었는지 살았는지 처리
+            return Attack_Power; //대상에게 코인을 줌
         }
-        public void Attack(int gainExp)
-        {
 
-            Exp += gainExp;
-
-        }
         public string GetMonsterLevel()
         {
             return MonsterLevel;
         }
-        public int GetCoin(ref int coin)
+        public int GetCoin()
         {
-            return coin;
+            return Coin;
         }
 
         public string GetName()
         {
             return Name;
         }
-        public uint GetAttack_Power()
+        public int GetAttack_Power()
         {
+            
             return Attack_Power;
         }
         public int GetExp()
         {
             return GiveExp;
         }
+        public int GetHP()
+        {
+            return Hp;
+        }
+
     }
 }

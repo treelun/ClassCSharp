@@ -8,6 +8,7 @@ namespace Rullet
 {
     class Monster_Vampire : AbstractMonster
     {
+
         public override void InitData()
         {
             Hp = 500;
@@ -18,19 +19,21 @@ namespace Rullet
             Name = "뱀파이어";
 
             MonsterLevel = "A";
-            coin = 300;
+            Coin = 300;
 
             GiveExp = 15;
             //PrintStat();
         }
 
-        public override void Attack(AbstractMonster damageArmy, ref int coin)
+        public override void Attack(AbstractMonster player)
         {
-            base.SetAttack(damageArmy, ref coin);
-            string damageName = damageArmy.GetName();
+            base.SetAttack(player);
+            string damageName = player.GetName();
+            int gainExp = player.GetExp();
+
 
             Console.WriteLine($"{Name}이(가) {damageName}을 공격했다!");
-
+            Console.WriteLine($"{Name}이(가) 경험치{gainExp}을 획득!");
         }
     }
 }
