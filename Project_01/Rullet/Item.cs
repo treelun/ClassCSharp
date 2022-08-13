@@ -14,7 +14,7 @@ namespace Rullet
         public string WeaponName;
         public int WeaponDamage;
         public uint WeaponLevel;
-        
+
 
         public Item()
         {
@@ -51,7 +51,7 @@ namespace Rullet
             {
                 Console.Clear();
                 SetCursorPosition(20, 10);
-                Console.WriteLine($"{WeaponName}이(가) {WeaponLevel}강 시도합니다.5강까지는 성공 확률은 {per}% 입니다");
+                Console.WriteLine($"{WeaponName}이(가) {WeaponLevel + 1}강 시도합니다.5강까지는 성공 확률은 {per}% 입니다");
                 Thread.Sleep(1000);
                 Console.Clear();
                 DrawMotion();
@@ -97,7 +97,7 @@ namespace Rullet
             {
                 Console.Clear();
                 SetCursorPosition(20, 10);
-                Console.WriteLine($"{WeaponName}이(가) {WeaponLevel}강 시도합니다.5강까지는 성공 확률은 {per}% 입니다");
+                Console.WriteLine($"{WeaponName}이(가) {WeaponLevel + 1}강 시도합니다.5강까지는 성공 확률은 {per}% 입니다");
                 Thread.Sleep(1000);
                 Clear();
                 DrawMotion();

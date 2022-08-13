@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4074102-2204-4084-B065-A6DB5DB07A82}</ProjectGuid>
+    <ProjectGuid>{BD75D99F-0365-4CD2-8E05-3F54C6F6F3B4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rullet</RootNamespace>
-    <AssemblyName>Rullet</AssemblyName>
+    <RootNamespace>drawing</RootNamespace>
+    <AssemblyName>drawing</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,34 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractCharacter.cs" />
-    <Compile Include="abstractItem.cs" />
-    <Compile Include="AbstractMonster.cs" />
-    <Compile Include="Title.cs" />
-    <Compile Include="Monster_Boss.cs" />
-    <Compile Include="Monster_DeathKnight.cs" />
-    <Compile Include="Monster_Goblin.cs" />
-    <Compile Include="Monster_Oger.cs" />
-    <Compile Include="Monster_Orc.cs" />
-    <Compile Include="Monster_Setting.cs" />
-    <Compile Include="Monster_Vampire.cs" />
-    <Compile Include="Weapon_AdamanSword.cs" />
-    <Compile Include="Weapon_BibranumSword.cs" />
-    <Compile Include="Weapon_BronzeDagger.cs" />
-    <Compile Include="Character.cs" />
-    <Compile Include="Weapon_DarkmetterSword.cs" />
-    <Compile Include="Weapon_Glove.cs" />
-    <Compile Include="Gotha.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="MainMenu.cs" />
-    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Monster_Rabit.cs" />
-    <Compile Include="Weapon_StillSword.cs" />
-    <Compile Include="Weapon_StoneSword.cs" />
-    <Compile Include="Weapon_TitanumSword.cs" />
-    <Compile Include="Weapon_Woodstick.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

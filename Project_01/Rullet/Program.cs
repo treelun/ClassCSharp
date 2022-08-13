@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using static System.Console;
-
+using System.Threading;
 
 namespace Rullet
 {
@@ -77,39 +77,51 @@ namespace Rullet
             AbstractMonster[] monsters = new AbstractMonster[1];
             Gotha got = new Gotha(); // 아이템뽑기 클래스
             Monster_Setting setting = new Monster_Setting();
+            Title title = new Title();
             int posY = 0;
-            string first = "아이템 뽑기 시작";
+            string first = "뽑기상점으로 가기";
             string Second = "아이템 강화 시작";
             string Third = "사냥을....나가볼까?";
             string Fourth = "끝내기";
-            int coin = 30000;
+            int coin = 5000;
             bool _isFinish = false;
             bool _isStart = false;
             int playerHp = 300;
             int playerExp = 0;
             player[0] = new Player(ref coin);
-
-
+            title.story();
+            title.PrintTitle();
+            got.Setting(item);
+            bool start = false;
             int randomValue = 0;
+
             while (!_isFinish)
             {
                 if (_isStart) //시작(enter)키를 누른 경우
                 {
                     
 
-                    if (posY == 0)//아이템뽑기
+                    if (posY == 0 && coin > 0)//아이템뽑기
                     {
+
                         randomValue = random.Next(0, 1000);
                         got.Gotcha(item, ref randomValue, ref coin, posY);//가챠진행
-                        player[0].Attack_Power = item[randomValue].WeaponDamage;
+
                         player[0].Coin = coin;
+                        _isStart = false;
+                        continue;
+                        
+
+                    }
+                    else if(posY == 0 && coin <= 0)
+                    {
                         _isStart = false;
                         continue;
                     }
                     else if(posY == 1)//아이템 강화
                     {
                         item[randomValue].Smith(ref coin);
-                        
+                        player[0].Attack_Power = item[randomValue].WeaponDamage;
                         _isStart = false;
                         continue;
                     }
@@ -147,10 +159,13 @@ namespace Rullet
                 {
                     BackgroundColor = ConsoleColor.Black;
                     ForegroundColor = ConsoleColor.White;
-                    main.Title();
+                    Thread.Sleep(1000);
+                    
                     main.mainMenu(ref posY,ref first, ref Second, ref Third, ref Fourth);
                     _isStart = true;
                     Clear();
+
+
                 }
 
             } 

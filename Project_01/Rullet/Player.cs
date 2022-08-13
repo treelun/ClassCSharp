@@ -24,7 +24,7 @@ namespace Rullet
 
             Name = "주인공";
 
-            PlayerLevel = 0;
+            PlayerLevel = 1;
             Coin = coin;
             Exp = 0;
             //PrintPlayerStat();

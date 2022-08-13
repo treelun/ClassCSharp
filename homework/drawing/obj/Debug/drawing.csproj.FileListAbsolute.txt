@@ -1,0 +1,7 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\bin\Debug\drawing.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\bin\Debug\drawing.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\bin\Debug\drawing.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\obj\Debug\drawing.csproj.AssemblyReference.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\obj\Debug\drawing.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\obj\Debug\drawing.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\homework\drawing\obj\Debug\drawing.pdb
