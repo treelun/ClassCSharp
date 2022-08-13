@@ -88,6 +88,7 @@ namespace Rullet
                 if (posY == 0 && coin > 0)
                 {
                     PrintBox();
+                    PrintOpenBox();
                     Thread.Sleep(500);
                     Console.Clear();
                     //RandomNum = random.Next(0, 1000);
@@ -138,7 +139,7 @@ namespace Rullet
 
             BackgroundColor = ConsoleColor.Black;
             ForegroundColor = ConsoleColor.DarkYellow;
-            Console.SetWindowSize(113, 30);
+
             SetCursorPosition(13, 5);
             Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
             SetCursorPosition(13, 6);
@@ -177,8 +178,8 @@ namespace Rullet
             Console.WriteLine("■            ■■■■■■■■■■■■■■■■■■■■■■■■■■■■            ■");
             SetCursorPosition(13, 23);
             Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
-
-
+            Thread.Sleep(500);
+            Clear();
 
         }
         public void PrintOpenBox()
@@ -186,35 +187,36 @@ namespace Rullet
 
             BackgroundColor = ConsoleColor.Black;
             ForegroundColor = ConsoleColor.DarkYellow;
-            Console.SetWindowSize(113, 30);
+
             SetCursorPosition(13, 5);
             Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+            
             SetCursorPosition(13, 6);
             Console.WriteLine("■                                                                                ■");
             SetCursorPosition(13, 7);
-            Console.WriteLine("■                                                                                ■");
+            Console.WriteLine("■                                              ■                                ■");
             SetCursorPosition(13, 8);
-            Console.WriteLine("■                                                                                ■");
+            Console.WriteLine("■                          ■■■■■■■■■■■                                ■");
             SetCursorPosition(13, 9);
-            Console.WriteLine("■                                                                                ■");
+            Console.WriteLine("■                          ■                  ■■■■■                        ■");
             SetCursorPosition(13, 10);
-            Console.WriteLine("■                                                                                ■");
+            Console.WriteLine("■                          ■■■■■■■■■■■                                ■");
             SetCursorPosition(13, 11);
-            Console.WriteLine("■                                                                                ■");
+            Console.WriteLine("■                                              ■                                ■");
             SetCursorPosition(13, 12);
-            Console.WriteLine("■                                                                                ■");
+            Console.WriteLine("■        ■                                                            ■        ■");
             SetCursorPosition(13, 13);
-            Console.WriteLine("■            ■■■■■■■■■■■■■■■■■■■■■■■■■■■■            ■");
+            Console.WriteLine("■          ■                                                        ■          ■");
             SetCursorPosition(13, 14);
             Console.WriteLine("■            ■                                                    ■            ■");
             SetCursorPosition(13, 15);
-            Console.WriteLine("■            ■                      ■■■■■■                  ■            ■");
+            Console.WriteLine("■              ■                                                ■              ■");
             SetCursorPosition(13, 16);
-            Console.WriteLine("■            ■■■■■■■■■■■■■        ■■■■■■■■■■■            ■");
+            Console.WriteLine("■            ■■■■■■■■■■■■■■■■■■■■■■■■■■■■            ■");
             SetCursorPosition(13, 17);
-            Console.WriteLine("■            ■                      ■        ■                  ■            ■");
+            Console.WriteLine("■            ■                                                    ■            ■");
             SetCursorPosition(13, 18);
-            Console.WriteLine("■            ■                      ■■■■■■                  ■            ■");
+            Console.WriteLine("■            ■                                                    ■            ■");
             SetCursorPosition(13, 19);
             Console.WriteLine("■            ■                                                    ■            ■");
             SetCursorPosition(13, 20);
@@ -225,8 +227,8 @@ namespace Rullet
             Console.WriteLine("■            ■■■■■■■■■■■■■■■■■■■■■■■■■■■■            ■");
             SetCursorPosition(13, 23);
             Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
-
-
+            Thread.Sleep(500);
+            Clear();
 
         }
     }
