@@ -14,12 +14,32 @@ namespace Rullet
             WeaponName = "강철소드";
             WeaponDamage = 20;
             WeaponLevel = 0;
-
+            PrintWeapon();
             //PrintStat();
         }
 
-        public void Smith(ref int coin)
+        public void PrintWeapon()
         {
+            Console.WriteLine(@"
+
+
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                             ***
+                                            *****
+                                            *****        
+                                            *****
+                                            ** **
+                                            ** **      
+                                            ** **
+                                            ** ** 
+                                            ** **
+                                            ** ** 
+                                          *********         
+                                             ***  
+                                             ***  
+                                             ***  
+                                            *****
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
         }
     }

@@ -14,12 +14,32 @@ namespace Rullet
             WeaponName = "티타늄소드";
             WeaponDamage = 30;
             WeaponLevel = 0;
-
+            PrintWeapon();
             //PrintStat();
         }
 
-        public void Smith(ref int coin)
+        public void PrintWeapon()
         {
+            Console.WriteLine(@"
+
+
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                             ***
+                                            *****
+                                            *****        
+                                            *****
+                                            ** **
+                                            ** **      
+                                            ** **
+                                            ** ** 
+                                            ** **
+                                            ** ** 
+                                          *********         
+                                             ***  
+                                             ***  
+                                             ***  
+                                            *****
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
         }
     }

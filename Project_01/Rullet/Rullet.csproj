@@ -46,6 +46,7 @@
     <Compile Include="AbstractCharacter.cs" />
     <Compile Include="abstractItem.cs" />
     <Compile Include="AbstractMonster.cs" />
+    <Compile Include="Start.cs" />
     <Compile Include="Title.cs" />
     <Compile Include="Monster_Boss.cs" />
     <Compile Include="Monster_DeathKnight.cs" />

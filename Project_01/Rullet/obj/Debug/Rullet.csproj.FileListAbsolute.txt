@@ -5,3 +5,10 @@ C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.c
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.csproj.CoreCompileInputs.cache
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.pdb
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.exe.config
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.exe
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.pdb
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe
+C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.pdb

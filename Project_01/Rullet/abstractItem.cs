@@ -11,7 +11,7 @@ namespace Rullet
     {
         public abstractItem() : base()
         {
-            InitData();
+            //InitData();
             
         }
 

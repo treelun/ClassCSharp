@@ -64,16 +64,6 @@ namespace Rullet
             } while (!Start);
         }
 
-        public void Title()
-        {
-            SetCursorPosition(32, 5);
-            WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-            SetCursorPosition(32, 6);
-            WriteLine("@@@        아이템 강화하기!       @@@");
-            SetCursorPosition(32, 7);
-            WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        }
-
         public void Menu(ref int posY, ref string first, ref string Second, bool Start)
         {
 

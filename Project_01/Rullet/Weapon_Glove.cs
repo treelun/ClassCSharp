@@ -14,15 +14,35 @@ namespace Rullet
             WeaponName = "권투글러브";
             WeaponDamage = 10;
             WeaponLevel = 0;
-
+            PrintWeapon();
             //PrintStat();
         }
 
-        public void Smith(ref int coin)
+        public void PrintWeapon()
         {
+            Console.WriteLine(@"
+
+
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                             ***
+                                            *****
+                                            *****        
+                                            *****
+                                            ** **
+                                            ** **      
+                                            ** **
+                                            ** ** 
+                                            ** **
+                                            ** ** 
+                                          *********         
+                                             ***  
+                                             ***  
+                                             ***  
+                                            *****
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
         }
-        
-        
+
+
     }
 }

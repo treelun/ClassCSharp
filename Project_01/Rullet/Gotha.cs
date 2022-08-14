@@ -10,11 +10,60 @@ namespace Rullet
 {
     class Gotha : Item
     {
-        
+/*        public void Listsetting()
+        {
+            Random random = new Random();
+            int randomValue = random.Next(0, 1000);
+            List<abstractItem> items = new List<abstractItem>();
+            items.Add(new Weapon_Woodstick());
+            items.Add(new Weapon_Glove());
+            items.Add(new Weapon_StoneSword());
+            items.Add(new Weapon_BronzeDagger());
+            items.Add(new Weapon_StillSword());
+            items.Add(new Weapon_TitanumSword());
+            items.Add(new Weapon_AdamanSword());
+            items.Add(new Weapon_BibranumSword());
+            items.Add(new Weapon_DarkmetterSword());
+            if (randomValue <= 300)
+            {
+                Console.WriteLine(items[0]);
+            }
+            else if (randomValue > 300 && randomValue <= 500)
+            {
+                Console.WriteLine(items[1]);
+            }
+            else if (randomValue > 500 && randomValue <= 700)
+            {
+                Console.WriteLine(items[2]);
+            }
+            else if (randomValue > 700 && randomValue <= 800)
+            {
+                Console.WriteLine(items[3]);
+            }
+            else if (randomValue > 800 && randomValue <= 900)
+            {
+                Console.WriteLine(items[4]);
+            }
+            else if (randomValue > 900 && randomValue <= 960)
+            {
+                Console.WriteLine(items[5]);
+            }
+            else if (randomValue > 960 && randomValue <= 980)
+            {
+                Console.WriteLine(items[6]);
+            }
+            else if (randomValue > 980 && randomValue <= 995)
+            {
+                Console.WriteLine(items[7]);
+            }
+            else if (randomValue > 995 && randomValue <= 1000)
+            {
+                Console.WriteLine(items[8]);
+            }
+            
+        }*/
         public void Setting(abstractItem[] item)
         {
-            
-            
 
             for (int i = 0; i < item.Length; i++)
             {
@@ -63,23 +112,20 @@ namespace Rullet
             
 
             int count = 0;
-            bool start = false;
-            string a1 = "뽑는다.";
-            string a2 = "상점을 나간다.";
 
             while (coin > 0)
             {
                 SetCursorPosition(10, 5);
                 WriteLine("어서오세요 뽑기상점입니다.");
+                Thread.Sleep(1000);
                 SetCursorPosition(10, 6);
                 WriteLine("상점직원 : 저희는 무기가 랜덤으로 나온답니다. 운이좋다면 한번에 좋은무기도 가져가실수있어요");
-                Thread.Sleep(500);
+                Thread.Sleep(1000);
                 SetCursorPosition(10, 7);
                 WriteLine("상점직원 : 뽑기 1회당 500코인이 소비됩니다.");
 
-                Thread.Sleep(500);
-                Console.Clear();
-
+                Thread.Sleep(1000);
+                Clear();
 
                 BackgroundColor = ConsoleColor.Black;
                 ForegroundColor = ConsoleColor.Red;
@@ -92,6 +138,7 @@ namespace Rullet
                     Thread.Sleep(500);
                     Console.Clear();
                     //RandomNum = random.Next(0, 1000);
+                    item[RandomNum].InitData();
                     item[RandomNum].PrintStat();
                     count++;
                     coin -= 500;

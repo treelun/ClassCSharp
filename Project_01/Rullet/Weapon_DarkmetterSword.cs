@@ -15,12 +15,32 @@ namespace Rullet
             WeaponName = "다크메터소드";
             WeaponDamage = 100;
             WeaponLevel = 0;
-
+            PrintWeapon();
             //PrintStat();
         }
 
-        public void Smith(ref int coin)
+        public void PrintWeapon()
         {
+            Console.WriteLine(@"
+
+
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                             ***
+                                            *****
+                                            *****        
+                                            *****
+                                            ** **
+                                            ** **      
+                                            ** **
+                                            ** ** 
+                                            ** **
+                                            ** ** 
+                                          *********         
+                                             ***  
+                                             ***  
+                                             ***  
+                                            *****
+                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
         }
     }

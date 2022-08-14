@@ -83,7 +83,7 @@ namespace Rullet
                     else if (Hp <= 0)
                     {
                         Console.WriteLine("당신은 사망하였습니다. 게임을 종료합니다.");
-                        coin = 30000;
+                        coin = 5000;
                         break;
                     }
                     else if (posY == 2)

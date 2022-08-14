@@ -14,7 +14,7 @@ namespace Rullet
         public string WeaponName;
         public int WeaponDamage;
         public uint WeaponLevel;
-
+        public string WeaponImage;
 
         public Item()
         {
@@ -40,9 +40,10 @@ namespace Rullet
         {
             BackgroundColor = ConsoleColor.Black;
             ForegroundColor = ConsoleColor.DarkRed;
-            SetCursorPosition(60, 22);
+            
+            SetCursorPosition(10, 5);
             Console.WriteLine($"무기이름 : {WeaponName}");
-            SetCursorPosition(60, 23);
+            SetCursorPosition(10, 6);
             Console.WriteLine($"무기 공격력 : {WeaponDamage}, 강화레벨: {WeaponLevel}");
         }
         public void Faildindex(ref int posY, ref int coin, int Value, int per, int a)

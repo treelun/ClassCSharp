@@ -30,6 +30,11 @@ namespace _2022_08_14
 
             Add(n1, n2, out int result);
             Console.WriteLine($"{result}");
+
+            //DFP
+
+            //BFP
+
         }
         static void Swap(ref int n1,ref int n2)
         {
