@@ -20,6 +20,9 @@ namespace Rullet
         }
         public void PrintWeapon()
         {
+            BackgroundColor = ConsoleColor.White;
+            ForegroundColor = ConsoleColor.Blue;
+
             Console.WriteLine(@"
 
 

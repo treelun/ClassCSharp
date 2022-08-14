@@ -11,7 +11,7 @@ namespace Rullet
     {
         public override void InitData()
         {
-            WeaponName = "돌막대기";
+            WeaponName = "돌검";
             WeaponDamage = 10;
             WeaponLevel = 0;
             PrintWeapon();
@@ -20,6 +20,9 @@ namespace Rullet
 
         public void PrintWeapon()
         {
+            BackgroundColor = ConsoleColor.Black;
+            ForegroundColor = ConsoleColor.DarkGray;
+
             Console.WriteLine(@"
 
 
