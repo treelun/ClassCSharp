@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace Rullet
 {
@@ -25,15 +26,21 @@ namespace Rullet
 
         public void PrintStat()
         {
+            SetCursorPosition(65, 7);
             Console.WriteLine($"이름 : {Name}  몬스터 등급 : {MonsterLevel}");
+            SetCursorPosition(65, 8);
             Console.WriteLine($"체력 : {Hp}    공격력 : {Attack_Power}");
+            SetCursorPosition(65, 9);
             Console.WriteLine($"보유 코인{Coin}     경험치 : {GiveExp}");
 
         }
         public void PrintPlayerStat()
         {
+            
             Console.WriteLine($"이름 : {Name}  레벨 : {PlayerLevel}");
+            
             Console.WriteLine($"체력 : {Hp}  공격력 : {Attack_Power} ");
+
             Console.WriteLine($"보유 코인{Coin}     경험치 : {Exp}");
         }
 

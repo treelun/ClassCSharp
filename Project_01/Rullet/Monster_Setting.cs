@@ -26,37 +26,32 @@ namespace Rullet
             if (Y == 0)
             {
                 monsters[0] = new Monster_Rabit();
-                Console.WriteLine($"토끼 생성");
+                
             }
             else if (Y == 1)
             {
                 monsters[0] = new Monster_Goblin();
-                Console.WriteLine("고블린 생성");
+                
             }
             else if (Y == 2)
             {
                 monsters[0] = new Monster_Orc();
-                Console.WriteLine("오크 생성");
             }
             else if (Y == 3)
             {
                 monsters[0] = new Monster_Oger();
-                Console.WriteLine("오거 생성");
             }
             else if (Y == 4)
             {
                 monsters[0] = new Monster_Vampire();
-                Console.WriteLine("뱀파이어 생성");
             }
             else if (Y == 5)
             {
                 monsters[0] = new Monster_DeathKnight();
-                Console.WriteLine("데스나이트 생성");
             }
             else if (Y == 6)
             {
                 monsters[0] = new Monster_Boss();
-                Console.WriteLine("사우론 생성");
             }
 
             

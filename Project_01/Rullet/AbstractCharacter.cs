@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using static System.Console;
+
 
 namespace Rullet
 {
@@ -49,17 +51,23 @@ namespace Rullet
                     {
                         Console.Clear();
                         monsters[0].Hp -= GetAttack_Power();
+                        SetCursorPosition(5, 27);
                         Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 공격하였습니다.");
+                        SetCursorPosition(5, 28);
                         Console.WriteLine($"{monsters[0].GetName()}의 체력이 {GetAttack_Power()}만큼 줄었습니다.");
+                        SetCursorPosition(5, 29);
                         Console.WriteLine($"{monsters[0].GetName()}의 체력이 {monsters[0].Hp}만큼 남았습니다.");
-                        Thread.Sleep(700);
+                        Thread.Sleep(1500);
 
-                        Console.Clear();
+                        
                         Hp -= monsters[0].GetAttack_Power();
+                        SetCursorPosition(65, 7);
                         Console.WriteLine($"{monsters[0].GetName()}이(가) {GetName()}를 공격하였습니다.");
+                        SetCursorPosition(65, 8);
                         Console.WriteLine($"{GetName()}의 체력이 {monsters[0].GetAttack_Power()}만큼 줄었습니다.");
+                        SetCursorPosition(65, 9);
                         Console.WriteLine($"{GetName()}의 체력이 {Hp}만큼 남았습니다.");
-                        Thread.Sleep(700);
+                        Thread.Sleep(1500);
                         
                     }
                     else if (monsters[0].Hp <= 0 && posY == 0)
