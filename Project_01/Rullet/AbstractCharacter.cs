@@ -36,14 +36,14 @@ namespace Rullet
                 string a4 = "몬스터 정보보기";
                 int posY = 0;
 
-                menu.mainMenu(ref posY, ref a1, ref a2, ref a3, ref a4);
+                menu.mainMenu(ref posY, ref a1, ref a2, ref a3, ref a4); //메인메뉴 클래스, 메뉴선택
 
                 if (true)
                 {
                     if (monsters[0].Hp > 0 && Hp > 0 && posY == 0)
                     {
                         Console.Clear();
-                        monsters[0].Hp -= GetAttack_Power();
+                        monsters[0].Hp -= GetAttack_Power();// 몬스터에게 플레이어가 공격
                         SetCursorPosition(5, 25);
                         Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 공격하였습니다.");
                         SetCursorPosition(5, 26);
@@ -53,7 +53,7 @@ namespace Rullet
                         Thread.Sleep(1500);
 
                         
-                        Hp -= monsters[0].GetAttack_Power();
+                        Hp -= monsters[0].GetAttack_Power(); // 플레이어에게 몬스터가 공격
                         SetCursorPosition(65, 7);
                         Console.WriteLine($"{monsters[0].GetName()}이(가) {GetName()}를 공격하였습니다.");
                         SetCursorPosition(65, 8);
@@ -63,7 +63,7 @@ namespace Rullet
                         Thread.Sleep(1000);
                         
                     }
-                    else if (monsters[0].Hp <= 0 && posY == 0)
+                    else if (monsters[0].Hp <= 0 && posY == 0)//몬스터 처치시
                     {
                         SetCursorPosition(5, 27);
                         Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 처치하였습니다.");
@@ -73,7 +73,7 @@ namespace Rullet
                         Exp += monsters[0].GetExp();
                         SetCursorPosition(95, 0);
                         Console.WriteLine($"잔여코인 {coin}");
-                        if (monsters[0].Hp <= 0 && Exp >= 100)
+                        if (monsters[0].Hp <= 0 && Exp >= 100)// 몬스터 처치후 경험치가 100 이면 Levelup
                         {
                             Console.WriteLine("레벨업!");
                             Console.WriteLine("레벨업으로 인해 체력이 100 상승");
@@ -84,7 +84,7 @@ namespace Rullet
                         break;
                     }
 
-                    else if (Hp <= 0)
+                    else if (Hp <= 0)//죽음
                     {
                         Console.WriteLine("당신은 사망하였습니다. 게임을 종료합니다.");
                         Write(@"                 #n    n#n  n#n  #n  n#n   n#    n
@@ -113,12 +113,12 @@ namespace Rullet
                         coin = 5000;
                         break;
                     }
-                    else if (posY == 2)
+                    else if (posY == 2) // 주인공 정보보기
                     {
                         PrintPlayerStat();
                         continue;
                     }
-                    else if (posY == 3)
+                    else if (posY == 3) // 몬스터 정보보기
                     {
                         monsters[0].PrintStat();
                         continue;

@@ -9,6 +9,7 @@ namespace Rullet
 {
     class Monster_Setting : Character
     {
+        //등급을 선택하면 등급에 맞는 몬스터를 배열에 담고 준비시켜놓음
         public void CalledMonster(AbstractMonster[] monsters)
         {
             int Y = 0;

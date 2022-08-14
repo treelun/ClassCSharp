@@ -9,7 +9,7 @@ namespace Rullet
 {
     class MainMenu
     {
-        public void mainMenu(ref int posY, ref string first, ref string Second, ref string Third, ref string Fourth)
+        public void mainMenu(ref int posY, ref string first, ref string Second, ref string Third, ref string Fourth) // 선택지가 4개
         {
             
             bool Start = false;
@@ -64,7 +64,7 @@ namespace Rullet
             } while (!Start);
         }
 
-        public void Menu(ref int posY, ref string first, ref string Second, bool Start)
+        public void Menu(ref int posY, ref string first, ref string Second, bool Start) // 선택지가 2개
         {
 
             
@@ -118,7 +118,7 @@ namespace Rullet
 
         public void MonsterSelectMenu(ref int posY, ref string f, ref string d, ref string c, ref string b, ref string a, ref string S, ref string boss)
         {
-
+            // 선택지가 8개
             bool Start = false;
             SetCursorPosition(20, 15);
             WriteLine("몬스터 등급을 선택하세요");

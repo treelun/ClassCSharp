@@ -90,8 +90,8 @@ namespace Rullet
 
 
 
-        }
-        public void Completeindex(ref int posY, ref int coin, int Value, int per, int a)
+        } // 강화 실패 구문
+        public void Completeindex(ref int posY, ref int coin, int Value, int per, int a) // 강화 성공 구문
         {
             
             if (posY == 0)
@@ -135,7 +135,7 @@ namespace Rullet
 
 
         }
-        public void DrawCompliteLevel()
+        public void DrawCompliteLevel() // 강화성공 이미지
         {
 
             BackgroundColor = ConsoleColor.DarkGreen;
@@ -181,7 +181,7 @@ namespace Rullet
             Thread.Sleep(800);
 
         }
-        public void DrawFailLevel()
+        public void DrawFailLevel() // 아이템 강화 실패시 나오는 이미지?
         {
 
             BackgroundColor = ConsoleColor.DarkRed;
@@ -229,7 +229,7 @@ namespace Rullet
 
 
         }
-        public void DrawMotion()
+        public void DrawMotion() // 아이템 강화시 나오는 이미지
         {
 
             SetCursorPosition(1, 3);

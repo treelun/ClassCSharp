@@ -12,7 +12,7 @@ namespace Rullet
    
     class Title
     {
-        public void PrintTitle()
+        public void PrintTitle()// 게임 제목
         {
 
             SetCursorPosition(20, 5);
@@ -38,7 +38,7 @@ namespace Rullet
 
 
         }
-        public void story()
+        public void story() // 있으나 없으나 한 스토리
         {
             SetCursorPosition(10, 5);
             Console.WriteLine("엄마의 심부름을 떠나던 주인공 숲속에서 고블린을 만나게 된다.");
