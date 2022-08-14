@@ -13,26 +13,26 @@ namespace Rullet
         {
             
             bool Start = false;
-            SetCursorPosition(20, 20);
+            SetCursorPosition(80, 25);
             WriteLine(first);
 
-            SetCursorPosition(20, 21);
+            SetCursorPosition(80, 26);
             WriteLine(Second);
 
-            SetCursorPosition(20, 22);
+            SetCursorPosition(80, 27);
             WriteLine(Third);
 
-            SetCursorPosition(20, 23);
+            SetCursorPosition(80, 28);
             WriteLine(Fourth);
 
             do
             {
                 for (int k = 0; k < 4; k++)
                 {
-                    SetCursorPosition(17, k + 20);
+                    SetCursorPosition(77, k + 25);
                     Write("  ");
                 }
-                SetCursorPosition(17, posY + 20);
+                SetCursorPosition(77, posY + 25);
                 Write("▶");
 
                 ConsoleKeyInfo key = ReadKey(true);

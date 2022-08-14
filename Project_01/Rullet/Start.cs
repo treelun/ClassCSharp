@@ -50,7 +50,7 @@ namespace Rullet
                         {
                             randomValue = random.Next(0, 1000);
                             got.Gotcha(item, ref randomValue, ref coin, posY);//가챠진행
-
+                            player[0].Attack_Power = item[randomValue].WeaponDamage;
                             player[0].Coin = coin;
                             _isStart = false;
                             continue;

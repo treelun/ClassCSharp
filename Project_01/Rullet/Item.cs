@@ -178,7 +178,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 23);
             Console.WriteLine("############################################################################################################");
-
+            Thread.Sleep(800);
 
         }
         public void DrawFailLevel()
@@ -224,6 +224,8 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 23);
             Console.WriteLine("############################################################################################################");
+            Thread.Sleep(800);
+            Clear();
 
 
         }
@@ -278,7 +280,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Clear();
 
             SetCursorPosition(1, 3);
@@ -329,7 +331,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Clear();
             
 
@@ -382,7 +384,7 @@ namespace Rullet
             Console.WriteLine("#                                                                                                          #");
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
-            Thread.Sleep(300);
+            Thread.Sleep(500);
             Clear();
 
         }

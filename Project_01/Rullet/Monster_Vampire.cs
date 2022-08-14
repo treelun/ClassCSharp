@@ -20,7 +20,7 @@ namespace Rullet
 
             MonsterLevel = "A";
             Coin = 300;
-
+            PrintMonster();
             GiveExp = 15;
             //PrintStat();
         }
@@ -34,6 +34,31 @@ namespace Rullet
 
             Console.WriteLine($"{Name}이(가) {damageName}을 공격했다!");
             Console.WriteLine($"{Name}이(가) 경험치{gainExp}을 획득!");
+        }
+        public void PrintMonster()
+        {
+
+            Console.WriteLine(@"
+
+                                (                      )
+                                |\    _,--------._    / |
+                                | `.,'            `. /  |
+                  희희          `  '              ,-'   '
+                                \/_         _   (     /
+                                (,-.`.    ,',-.`. `__,'
+                                |/#\ ),-','#\`= ,'.` |
+                                `._/)  -'.\_,'   ) ))|
+                                /  (_.)\     .   -'//
+                                (  /\____/\    ) )`'\
+                                \ |V----V||  ' ,    \
+                                |`- -- -'   ,'   \  \      _____
+                            ___    |         .'    \ \  `._,-'     `-
+                            `.__,`---^---'       \ ` -'
+                                -.______  \ . /  ______,-
+                                        `.     ,'            fk
+
+
+");
         }
     }
 }

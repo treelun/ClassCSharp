@@ -27,19 +27,10 @@ namespace Rullet
             PlayerLevel = 1;
             Coin = coin;
             Exp = 0;
-            //PrintPlayerStat();
+            PrintPlayerStat();
         }
 
-        public override void Attack(AbstractCharacter player)
-        {
-            base.SetAttack(player);
-            string damageName = player.GetName();
-            int gainExp = player.GetExp();
-            
 
-            Console.WriteLine($"{Name}이(가) {damageName}을 공격했다!");
-            Console.WriteLine($"{Name}이(가) 경험치{gainExp}을 획득!");
-        }
 
         public override void Levelup()
         {
