@@ -119,10 +119,7 @@ namespace Rullet
                 WriteLine("어서오세요 뽑기상점입니다.");
                 Thread.Sleep(1000);
                 SetCursorPosition(10, 6);
-                WriteLine("상점직원 : 저희는 무기가 랜덤으로 나온답니다. 운이좋다면 한번에 좋은무기도 가져가실수있어요");
-                Thread.Sleep(1000);
-                SetCursorPosition(10, 7);
-                WriteLine("상점직원 : 뽑기 1회당 500코인이 소비됩니다.");
+                WriteLine("뽑기 1회당 500코인이 소비됩니다.");
 
                 Thread.Sleep(1000);
                 Clear();

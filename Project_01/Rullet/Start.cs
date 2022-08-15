@@ -78,7 +78,7 @@ namespace Rullet
 
 
 
-                        player[0].Attack(monsters, ref coin, ref playerHp, ref playerExp);
+                        player[0].Attack(monsters, ref coin);
 
 
 

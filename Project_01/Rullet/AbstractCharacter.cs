@@ -21,7 +21,7 @@ namespace Rullet
 
         public abstract void Levelup();
 
-        public void Attack(AbstractMonster[] monsters, ref int coin, ref int PlayerHp, ref int PlayerExp)
+        public void Attack(AbstractMonster[] monsters, ref int coin)
         {
             Monster_Setting setting = new Monster_Setting();
 
