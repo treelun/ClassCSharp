@@ -15,4 +15,3 @@ C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.e
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.application
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.pdb
-C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.csproj.AssemblyReference.cache

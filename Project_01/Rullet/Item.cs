@@ -57,7 +57,8 @@ namespace Rullet
                 Console.Clear();
                 DrawMotion();
                 DrawFailLevel();
-
+                BackgroundColor = ConsoleColor.Black;
+                ForegroundColor = ConsoleColor.White;
                 WeaponDamage -= Value;
                 WeaponLevel--;
                 
@@ -67,8 +68,7 @@ namespace Rullet
 
 
                 Thread.Sleep(800);
-                BackgroundColor = ConsoleColor.Black;
-                ForegroundColor = ConsoleColor.White;
+
                 Console.Clear();
 
                 SetCursorPosition(32, 5);
@@ -225,7 +225,7 @@ namespace Rullet
             SetCursorPosition(1, 23);
             Console.WriteLine("############################################################################################################");
             Thread.Sleep(800);
-            Clear();
+            
 
 
         }

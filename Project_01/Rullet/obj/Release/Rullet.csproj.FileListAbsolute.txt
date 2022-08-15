@@ -4,3 +4,8 @@ C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Release\Rullet
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.csproj.CoreCompileInputs.cache
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.exe
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Release\Rullet.exe.manifest
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Release\Rullet.application
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.exe.manifest
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.application
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.csproj.AssemblyReference.cache

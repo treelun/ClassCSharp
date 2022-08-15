@@ -33,7 +33,7 @@ namespace Rullet
 
                 main.Menu(ref posY, ref first, ref Second, false);
 
-                int num = ran.Next(0, 9);
+                int num = ran.Next(0, 10);
                 if (WeaponLevel >= 0 && WeaponLevel < 5 && coin > 0 && posY == 0)
                 {
                     Completeindex(ref posY, ref coin, 2, 100, 100);

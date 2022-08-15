@@ -70,7 +70,7 @@ namespace Rullet
                 SetCursorPosition(10, 6);
                 WriteLine("뽑기 1회당 500코인이 소비됩니다.");
 
-                Thread.Sleep(1000);
+                Thread.Sleep(1500);
                 Clear();
 
                 BackgroundColor = ConsoleColor.Black;
