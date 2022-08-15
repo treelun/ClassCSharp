@@ -15,13 +15,5 @@ namespace Rullet
         }
         public abstract void InitData();
 
-        protected void SetAttack(AbstractMonster player)
-        {
-            player.Damage(this.Attack_Power);
-
-        }
-
-
-        public abstract void Attack(AbstractMonster player);
     }
 }

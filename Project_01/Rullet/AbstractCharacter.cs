@@ -21,11 +21,11 @@ namespace Rullet
 
         public abstract void Levelup();
 
-        public void Attack(AbstractMonster[] monsters, ref int coin)
+        public void Attack(AbstractMonster[] monsters, ref int coin) // 공격할때의 함수
         {
             Monster_Setting setting = new Monster_Setting();
             Random ran = new Random();
-            setting.CalledMonster(monsters);
+            setting.CalledMonster(monsters); // 몬스터 생성
             MainMenu menu = new MainMenu();
             while (true)//공격한다, 도망간다 선택 넣기. 레벨업 시스템 넣기. 가위바위보 추가로 인해 난이도 조절필요
             {
@@ -35,7 +35,7 @@ namespace Rullet
                 string a3 = "플레이어 정보보기";
                 string a4 = "몬스터 정보보기";
                 int posY = 0;
-                int Monsterattack = ran.Next(1, 3); // 몬스터 가위바위보
+                int Monsterattack = ran.Next(1, 4); // 몬스터 가위바위보
                 menu.mainMenu(ref posY, ref a1, ref a2, ref a3, ref a4); //메인메뉴 클래스, 메뉴선택
 
                 if (true)

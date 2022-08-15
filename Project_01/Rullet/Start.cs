@@ -16,11 +16,11 @@ namespace Rullet
             MainMenu main = new MainMenu(); // 메인화면 출력을 위한 클래스 호출
             abstractItem[] item = new abstractItem[1000]; // 가챠를 진행하기위해 배열 생성
             Random random = new Random(); // 랜덤 인수 필요로 랜덤 선언
-            AbstractCharacter[] player = new AbstractCharacter[1];
-            AbstractMonster[] monsters = new AbstractMonster[1];
+            AbstractCharacter[] player = new AbstractCharacter[1]; // 주인공의 데이터, 코인,공격력을 적용해 주기위해 선언
+            AbstractMonster[] monsters = new AbstractMonster[1]; // 몬스터의 데이터를 받기위해 선언
             Gotha got = new Gotha(); // 아이템뽑기 클래스
-            Monster_Setting setting = new Monster_Setting();
-            Title title = new Title();
+            Title title = new Title(); // 게임 스토리와 제목을 위한 클래스
+
             int posY = 0;
             string first = "뽑기상점으로 가기";
             string Second = "아이템 강화 시작";
@@ -30,34 +30,29 @@ namespace Rullet
             bool _isFinish = false;
             bool _isStart = false;
 
-            player[0] = new Player(ref coin);
+            player[0] = new Player(ref coin);//주인공캐릭터 생성
             Clear();
+
+            title.notice();
             title.story();
             title.PrintTitle();
+
             got.Setting(item);
+
             int randomValue = 0;
 
-            while (!_isFinish)
+            while (!_isFinish) //isFinish를 트루로
             {
                 if (_isStart) //시작(enter)키를 누른 경우
                 {
-
-
-                    if (posY == 0 && coin > 0)//아이템뽑기
+                    if (posY == 0 && coin > 0) // 아이템뽑기
                     {
-
-                        if (posY == 0 && coin > 0)
-                        {
-                            randomValue = random.Next(0, 1000);
-                            got.Gotcha(item, ref randomValue, ref coin, posY);//가챠진행
-                            player[0].Attack_Power = item[randomValue].WeaponDamage;
-                            player[0].Coin = coin;
-                            _isStart = false;
-                            continue;
-                        }
-
+                        randomValue = random.Next(0, 1001);
+                        got.Gotcha(item, ref randomValue, ref coin, posY);//가챠진행
+                        player[0].Attack_Power = item[randomValue].WeaponDamage;
+                        player[0].Coin = coin;
+                        _isStart = false;
                         continue;
-
                     }
                     else if (posY == 0 && coin <= 0)
                     {
@@ -73,33 +68,15 @@ namespace Rullet
                     }
                     else if (posY == 2)
                     {
-
-
-
-
-
                         player[0].Attack(monsters, ref coin);
-
-
-
-
                         _isStart = false;
                         continue;
                     }
                     else if (posY == 3)
                     {
-
                         _isFinish = true;
                         break;
                     }
-                    /*                        
-
-
-
-                                            case 3: //종료
-                                                _isFinish = true;
-                                                break;*/
-
                 }
                 else //대기화면인 경우
                 {

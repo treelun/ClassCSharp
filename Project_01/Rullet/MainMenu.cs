@@ -38,16 +38,16 @@ namespace Rullet
                 ConsoleKeyInfo key = ReadKey(true);
 
 
-                switch (key.Key)
+                switch (key.Key) //어떤 키가 들어왔는지
                 {
-                    case ConsoleKey.UpArrow:
+                    case ConsoleKey.UpArrow: //방향키 위
                         posY--;//(Y축 방향으로 위로1칸)
                         if (posY < 0)//(posY값이 0보다 작으면 원하는 출력값이 나오지않으므로 0보다 작을시 1로 바꿔줌)
                         {
                             posY = 3;
                         }
                         break;
-                    case ConsoleKey.DownArrow:
+                    case ConsoleKey.DownArrow: //방향키 아래
                         posY++;//(Y축 방향으로 아래로1칸)
                         if (posY > 3)//(posY값이 1보다 클경우 원하는 출력값이 나오지않기에 0으로 돌려줌)
                         {

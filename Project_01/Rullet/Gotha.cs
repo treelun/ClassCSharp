@@ -10,58 +10,7 @@ namespace Rullet
 {
     class Gotha : Item
     {
-/*        public void Listsetting()
-        {
-            Random random = new Random();
-            int randomValue = random.Next(0, 1000);
-            List<abstractItem> items = new List<abstractItem>();
-            items.Add(new Weapon_Woodstick());
-            items.Add(new Weapon_Glove());
-            items.Add(new Weapon_StoneSword());
-            items.Add(new Weapon_BronzeDagger());
-            items.Add(new Weapon_StillSword());
-            items.Add(new Weapon_TitanumSword());
-            items.Add(new Weapon_AdamanSword());
-            items.Add(new Weapon_BibranumSword());
-            items.Add(new Weapon_DarkmetterSword());
-            if (randomValue <= 300)
-            {
-                Console.WriteLine(items[0]);
-            }
-            else if (randomValue > 300 && randomValue <= 500)
-            {
-                Console.WriteLine(items[1]);
-            }
-            else if (randomValue > 500 && randomValue <= 700)
-            {
-                Console.WriteLine(items[2]);
-            }
-            else if (randomValue > 700 && randomValue <= 800)
-            {
-                Console.WriteLine(items[3]);
-            }
-            else if (randomValue > 800 && randomValue <= 900)
-            {
-                Console.WriteLine(items[4]);
-            }
-            else if (randomValue > 900 && randomValue <= 960)
-            {
-                Console.WriteLine(items[5]);
-            }
-            else if (randomValue > 960 && randomValue <= 980)
-            {
-                Console.WriteLine(items[6]);
-            }
-            else if (randomValue > 980 && randomValue <= 995)
-            {
-                Console.WriteLine(items[7]);
-            }
-            else if (randomValue > 995 && randomValue <= 1000)
-            {
-                Console.WriteLine(items[8]);
-            }
-            
-        }*/
+
         public void Setting(abstractItem[] item)
         {
 

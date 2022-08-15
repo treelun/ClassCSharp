@@ -17,7 +17,7 @@ namespace Rullet
 
         public abstract void InitData();
 
-        public void Smith(ref int coin)
+        public void Smith(ref int coin) // 아이템강화 함수
         {
             MainMenu main = new MainMenu();
             Random ran = new Random();

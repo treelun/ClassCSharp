@@ -6,12 +6,13 @@ C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.c
 C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe
 C:\Users\admin\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.pdb
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.exe.manifest
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.application
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.exe
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.pdb
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.csproj.CoreCompileInputs.cache
-C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe
-C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.pdb
-C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.exe.manifest
-C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Debug\Rullet.application
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe.manifest
 C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.application
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Debug\Rullet.csproj.AssemblyReference.cache

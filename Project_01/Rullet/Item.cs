@@ -46,7 +46,7 @@ namespace Rullet
             SetCursorPosition(10, 6);
             Console.WriteLine($"무기 공격력 : {WeaponDamage}, 강화레벨: {WeaponLevel}");
         }
-        public void Faildindex(ref int posY, ref int coin, int Value, int per, int a)
+        public void Faildindex(ref int posY, ref int coin, int Value, int per, int a) // 강화 실패 함수
         {
             if (posY == 0)
             {
@@ -83,15 +83,15 @@ namespace Rullet
                 SetCursorPosition(95, 0);
                 Console.WriteLine($"잔여 코인{coin}");
 
-                Thread.Sleep(700);
+                Thread.Sleep(1000);
                 Clear();
 
             }
 
 
 
-        } // 강화 실패 구문
-        public void Completeindex(ref int posY, ref int coin, int Value, int per, int a) // 강화 성공 구문
+        } 
+        public void Completeindex(ref int posY, ref int coin, int Value, int per, int a) // 강화 성공 함수
         {
             
             if (posY == 0)
@@ -128,7 +128,7 @@ namespace Rullet
                 SetCursorPosition(95, 0);
                 Console.WriteLine($"잔여 코인{coin}");
 
-                Thread.Sleep(700);
+                Thread.Sleep(1000);
                 Clear();
 
             }
@@ -181,7 +181,7 @@ namespace Rullet
             Thread.Sleep(800);
 
         }
-        public void DrawFailLevel() // 아이템 강화 실패시 나오는 이미지?
+        public void DrawFailLevel() // 아이템 강화 실패시 나오는 이미지
         {
 
             BackgroundColor = ConsoleColor.DarkRed;
