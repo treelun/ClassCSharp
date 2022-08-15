@@ -29,10 +29,9 @@ namespace Rullet
             int coin = 5000;
             bool _isFinish = false;
             bool _isStart = false;
-            int playerHp = 300;
-            int playerExp = 0;
+
             player[0] = new Player(ref coin);
-            //title.story();
+            title.story();
             title.PrintTitle();
             got.Setting(item);
             int randomValue = 0;

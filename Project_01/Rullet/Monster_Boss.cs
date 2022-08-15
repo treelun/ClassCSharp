@@ -11,7 +11,7 @@ namespace Rullet
 
         public override void InitData()
         {
-            Hp = 1000;
+            Hp = 500;
 
 
             Attack_Power = 100;

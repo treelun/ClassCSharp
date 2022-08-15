@@ -13,7 +13,7 @@ namespace Rullet
         public override void InitData()
         {
             WeaponName = "동단검";
-            WeaponDamage = 15;
+            WeaponDamage = 30;
             WeaponLevel = 0;
             PrintWeapon();
             //PrintStat();

@@ -56,15 +56,15 @@ namespace Rullet
                 Thread.Sleep(1000);
                 Console.Clear();
                 DrawMotion();
+                DrawFailLevel();
 
-                
                 WeaponDamage -= Value;
                 WeaponLevel--;
                 
                 coin -= a;
 
 
-                DrawFailLevel();
+
 
                 Thread.Sleep(800);
                 BackgroundColor = ConsoleColor.Black;
@@ -281,7 +281,7 @@ namespace Rullet
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
             Thread.Sleep(500);
-            Clear();
+            
 
             SetCursorPosition(1, 3);
             Console.WriteLine("############################################################################################################");
@@ -332,7 +332,7 @@ namespace Rullet
             SetCursorPosition(1, 26);
             Console.WriteLine("############################################################################################################");
             Thread.Sleep(500);
-            Clear();
+            
             
 
 

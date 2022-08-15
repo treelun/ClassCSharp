@@ -223,7 +223,7 @@ namespace Rullet
             SetCursorPosition(13, 23);
             Console.WriteLine("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
             Thread.Sleep(500);
-            Clear();
+            
 
         }
         public void PrintOpenBox()
