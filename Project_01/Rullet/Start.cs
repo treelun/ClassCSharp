@@ -62,7 +62,6 @@ namespace Rullet
                     else if (posY == 1)//아이템 강화
                     {
                         item[randomValue].Smith(ref coin);
-                        player[0].Attack_Power = item[randomValue].WeaponDamage;
                         _isStart = false;
                         continue;
                     }

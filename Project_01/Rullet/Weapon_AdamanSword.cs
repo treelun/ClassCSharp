@@ -20,28 +20,36 @@ namespace Rullet
         }
         public void PrintWeapon()
         {
-            BackgroundColor = ConsoleColor.White;
+            BackgroundColor = ConsoleColor.Black;
             ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(@"
-
-
-               
-                                             ***
-                                            *****
-                                            *****        
-                                            *****
-                                            ** **
-                                            ** **      
-                                            ** **
-                                            ** ** 
-                                            ** **
-                                            ** ** 
-                                          *********         
-                                             ***  
-                                             ***  
-                                             ***  
-                                            *****
-");
+            SetCursorPosition(51, 5);
+            WriteLine("***");
+            SetCursorPosition(50, 6);
+            WriteLine("*****");
+            SetCursorPosition(50, 7);
+            WriteLine("*****");
+            SetCursorPosition(50, 8);
+            WriteLine("** **");
+            SetCursorPosition(50, 9);
+            WriteLine("** **");
+            SetCursorPosition(50, 10);
+            WriteLine("** **");
+            SetCursorPosition(50, 11);
+            WriteLine("** **");
+            SetCursorPosition(50, 12);
+            WriteLine("** **");
+            SetCursorPosition(50, 13);
+            WriteLine("** **");
+            SetCursorPosition(48, 14);
+            WriteLine("*********");
+            SetCursorPosition(51, 15);
+            WriteLine("***");
+            SetCursorPosition(51, 16);
+            WriteLine("***");
+            SetCursorPosition(51, 17);
+            WriteLine("***");
+            SetCursorPosition(50, 18);
+            WriteLine("*****");
 
         }
     }

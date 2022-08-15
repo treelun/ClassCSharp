@@ -83,7 +83,6 @@ namespace Rullet
                     PrintOpenBox();
                     Thread.Sleep(500);
                     Console.Clear();
-                    //RandomNum = random.Next(0, 1000);
                     item[RandomNum].InitData();
                     item[RandomNum].PrintStat();
                     count++;
@@ -102,7 +101,6 @@ namespace Rullet
                     SetCursorPosition(80, 28);
                     Console.WriteLine($"총뽑기횟수 {count}");
                     item[RandomNum].PrintStat();
-                    //item[RandomNum].Smith();
                     break;
                 }
                 else if (coin < 0 && posY >= 0)

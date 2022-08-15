@@ -23,6 +23,9 @@ namespace Rullet
         public void PrintWood()
         {
             Console.WriteLine(@"
+
+
+
                                                              #
                                                         #    #
                                                          #  #          
