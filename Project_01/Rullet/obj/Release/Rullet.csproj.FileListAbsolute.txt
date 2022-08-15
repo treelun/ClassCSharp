@@ -1,0 +1,6 @@
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Release\Rullet.exe.config
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Release\Rullet.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\bin\Release\Rullet.pdb
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.csproj.CoreCompileInputs.cache
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.exe
+C:\Users\opop3\Documents\GitHub\ClassCSharp\Project_01\Rullet\obj\Release\Rullet.pdb

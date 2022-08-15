@@ -48,7 +48,7 @@ namespace Rullet
             }
             else if (Y == 5)
             {
-                monsters[0] = new Monster_DeathKnight();
+                monsters[0] = new Monster_Gagoil();
             }
             else if (Y == 6)
             {

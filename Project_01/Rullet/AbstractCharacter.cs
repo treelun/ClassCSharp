@@ -42,17 +42,21 @@ namespace Rullet
                 {
                     if (monsters[0].Hp > 0 && Hp > 0 && posY == 0 ) // 1:가위, 2: 바위 , 3: 보
                     {
+                        SetCursorPosition(10, 10);
                         Console.Write("가위(1), 바위(2), 보(3) 중 하나를(숫자로) 입력하세요 : ");
                         int playerattack = int.Parse(ReadLine());
-                        switch (playerattack)
+                        switch (playerattack)  // 입력숫자를 한글로 변환
                         {
                             case 1:
+                                SetCursorPosition(10, 11);
                                 WriteLine("플레이어 : 가위");
                                 break;
                             case 2:
+                                SetCursorPosition(10, 11);
                                 WriteLine("플레이어 : 바위");
                                 break;
                             case 3:
+                                SetCursorPosition(10, 11);
                                 WriteLine("플레이어 : 보");
                                 break;
                             default:
@@ -61,12 +65,15 @@ namespace Rullet
                         switch (Monsterattack)
                         {
                             case 1:
+                                SetCursorPosition(10, 12);
                                 WriteLine("몬스터 : 가위");
                                 break;
                             case 2:
+                                SetCursorPosition(10, 12);
                                 WriteLine("몬스터 : 바위");
                                 break;
                             case 3:
+                                SetCursorPosition(10, 12);
                                 WriteLine("몬스터 : 보");
                                 break;
                             default:
@@ -80,27 +87,28 @@ namespace Rullet
                                 {
                                     Console.Clear();
                                     monsters[0].Hp -= GetAttack_Power();// 몬스터에게 플레이어가 공격
-                                    SetCursorPosition(5, 25);
-                                    Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 공격하였습니다.");
-                                    SetCursorPosition(5, 26);
+                                    SetCursorPosition(10, 13);
+                                    Console.WriteLine($"{GetName()}이(가) 이겼습니다. {monsters[0].GetName()}를 공격하였습니다.");
+                                    SetCursorPosition(10, 14);
                                     Console.WriteLine($"{monsters[0].GetName()}의 체력이 {GetAttack_Power()}만큼 줄었습니다.");
-                                    SetCursorPosition(5, 27);
+                                    SetCursorPosition(10, 15);
                                     Console.WriteLine($"{monsters[0].GetName()}의 체력이 {monsters[0].Hp}만큼 남았습니다.");
                                     Thread.Sleep(1500);
                                 }
                                 else if (Monsterattack == 2)//2: 바위가 나오면 플레이어가 공격받음
                                 {
                                     Hp -= monsters[0].GetAttack_Power(); // 플레이어에게 몬스터가 공격
-                                    SetCursorPosition(65, 7);
-                                    Console.WriteLine($"{monsters[0].GetName()}이(가) {GetName()}를 공격하였습니다.");
-                                    SetCursorPosition(65, 8);
+                                    SetCursorPosition(10, 13);
+                                    Console.WriteLine($"{monsters[0].GetName()}이(가) 이겼습니다. {GetName()}를 공격하였습니다.");
+                                    SetCursorPosition(10, 14);
                                     Console.WriteLine($"{GetName()}의 체력이 {monsters[0].GetAttack_Power()}만큼 줄었습니다.");
-                                    SetCursorPosition(65, 9);
+                                    SetCursorPosition(10, 15);
                                     Console.WriteLine($"{GetName()}의 체력이 {Hp}만큼 남았습니다.");
                                     Thread.Sleep(1000);
                                 }
                                 else if (Monsterattack == 1)
                                 {
+                                    SetCursorPosition(10, 13);
                                     WriteLine("비겼습니다. 다음턴으로 진행됩니다.");
                                 }
                                 break;
@@ -109,27 +117,28 @@ namespace Rullet
                                 {
                                     Console.Clear();
                                     monsters[0].Hp -= GetAttack_Power();// 몬스터에게 플레이어가 공격
-                                    SetCursorPosition(5, 25);
-                                    Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 공격하였습니다.");
-                                    SetCursorPosition(5, 26);
+                                    SetCursorPosition(10, 13);
+                                    Console.WriteLine($"{GetName()}이(가) 이겼습니다. {monsters[0].GetName()}를 공격하였습니다.");
+                                    SetCursorPosition(10, 14);
                                     Console.WriteLine($"{monsters[0].GetName()}의 체력이 {GetAttack_Power()}만큼 줄었습니다.");
-                                    SetCursorPosition(5, 27);
+                                    SetCursorPosition(10, 15);
                                     Console.WriteLine($"{monsters[0].GetName()}의 체력이 {monsters[0].Hp}만큼 남았습니다.");
                                     Thread.Sleep(1500);
                                 }
                                 else if (Monsterattack == 3)//2: 보가 나오면 플레이어가 공격받음
                                 {
                                     Hp -= monsters[0].GetAttack_Power(); // 플레이어에게 몬스터가 공격
-                                    SetCursorPosition(65, 7);
-                                    Console.WriteLine($"{monsters[0].GetName()}이(가) {GetName()}를 공격하였습니다.");
-                                    SetCursorPosition(65, 8);
+                                    SetCursorPosition(10, 13);
+                                    Console.WriteLine($"{monsters[0].GetName()}이(가) 이겼습니다. {GetName()}를 공격하였습니다.");
+                                    SetCursorPosition(10, 14);
                                     Console.WriteLine($"{GetName()}의 체력이 {monsters[0].GetAttack_Power()}만큼 줄었습니다.");
-                                    SetCursorPosition(65, 9);
+                                    SetCursorPosition(10, 15);
                                     Console.WriteLine($"{GetName()}의 체력이 {Hp}만큼 남았습니다.");
                                     Thread.Sleep(1000);
                                 }
                                 else if (Monsterattack == 2)//2: 바위가 나오면 비기므로 아무런 공방없이 진행
                                 {
+                                    SetCursorPosition(10, 13);
                                     WriteLine("비겼습니다. 다음턴으로 진행됩니다.");
                                 }
                                 break;
@@ -138,28 +147,29 @@ namespace Rullet
                                 {
                                     Console.Clear();
                                     monsters[0].Hp -= GetAttack_Power();// 몬스터에게 플레이어가 공격
-                                    SetCursorPosition(5, 25);
-                                    Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 공격하였습니다.");
-                                    SetCursorPosition(5, 26);
+                                    SetCursorPosition(10, 13);
+                                    Console.WriteLine($"{GetName()}이(가) 이겼습니다. {monsters[0].GetName()}를 공격하였습니다.");
+                                    SetCursorPosition(10, 14);
                                     Console.WriteLine($"{monsters[0].GetName()}의 체력이 {GetAttack_Power()}만큼 줄었습니다.");
-                                    SetCursorPosition(5, 27);
+                                    SetCursorPosition(10, 15);
                                     Console.WriteLine($"{monsters[0].GetName()}의 체력이 {monsters[0].Hp}만큼 남았습니다.");
                                     Thread.Sleep(1500);
                                 }
                                 else if (Monsterattack == 1)//1: 가위가 나오면 플레이어가 공격받음
                                 {
                                     Hp -= monsters[0].GetAttack_Power(); // 플레이어에게 몬스터가 공격
-                                    SetCursorPosition(65, 7);
-                                    Console.WriteLine($"{monsters[0].GetName()}이(가) {GetName()}를 공격하였습니다.");
-                                    SetCursorPosition(65, 8);
+                                    SetCursorPosition(10, 13);
+                                    Console.WriteLine($"{monsters[0].GetName()}이(가) 이겼습니다. {GetName()}를 공격하였습니다.");
+                                    SetCursorPosition(10, 14);
                                     Console.WriteLine($"{GetName()}의 체력이 {monsters[0].GetAttack_Power()}만큼 줄었습니다.");
-                                    SetCursorPosition(65, 9);
+                                    SetCursorPosition(10, 15);
                                     Console.WriteLine($"{GetName()}의 체력이 {Hp}만큼 남았습니다.");
                                     Thread.Sleep(1000);
                                 }
                                 else if (Monsterattack == 3)
                                 {
-                                    WriteLine("비겼습니다. 다음턴으로 진행됩니다.");
+                                    SetCursorPosition(10, 13);
+                                    WriteLine($"비겼습니다. 다음턴으로 진행됩니다.");
                                 }
                                 break;
                             default:
@@ -199,10 +209,10 @@ namespace Rullet
                         if (monsters[0].Hp <= 0 && Exp >= 100)// 몬스터 처치후 경험치가 100 이면 Levelup
                         {
                             Console.WriteLine("레벨업!");
-                            Console.WriteLine("레벨업으로 인해 체력이 200 상승");
+                            Console.WriteLine("레벨업으로 인해 체력이 100 회복");
                             Levelup();
-                            Hp += 200;
-                            Exp = 0;
+                            Hp += 100;
+                            Exp = 0; // 경험치를 0으로 초기화
                         }
                         break;
                     }

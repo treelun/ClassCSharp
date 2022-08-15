@@ -48,7 +48,7 @@ namespace Rullet
             Thread.Sleep(2000);
             SetCursorPosition(10, 7);
             Console.WriteLine("마을로 향하게 되는데...");
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             Clear();
         }
 

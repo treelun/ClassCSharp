@@ -31,6 +31,7 @@ namespace Rullet
             bool _isStart = false;
 
             player[0] = new Player(ref coin);
+            Clear();
             title.story();
             title.PrintTitle();
             got.Setting(item);
