@@ -33,8 +33,7 @@ namespace Rullet
             player[0] = new Player(ref coin);//주인공캐릭터 생성
             Clear();
 
-            title.notice();
-            title.story();
+            
             title.PrintTitle();
 
             got.Setting(item);
