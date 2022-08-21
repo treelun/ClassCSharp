@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rullet.exe" size="61920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rullet.exe" size="60896">
       <assemblyIdentity name="Rullet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VLMrrwMNvR9OWDRVfBaoQ4tDBhmCgi1cu6qKtRbEFkE=</dsig:DigestValue>
+        <dsig:DigestValue>SwF7O2MAytKGB/erY9C8mVX9Al65D1y+dolA/ZBsbBM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
