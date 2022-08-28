@@ -260,34 +260,7 @@ namespace Rullet
 
                         
                     }
-/*                    else if (monsters[0].Hp <= 0 && posY == 0)//몬스터 처치시
-                    {
-                        SetCursorPosition(5, 27);
-                        Console.WriteLine($"{GetName()}이(가) {monsters[0].GetName()}를 처치하였습니다.");
-                        SetCursorPosition(5, 28);
-                        Console.WriteLine($"경험치{monsters[0].GetExp()}획득 Coin{monsters[0].GetCoin()}획득하였습니다");
-                        coin += monsters[0].GetCoin();
-                        Exp += monsters[0].GetExp();
-                        SetCursorPosition(95, 0);
-                        Console.WriteLine($"잔여코인 {coin}");
-                        if (monsters[0].Hp <= 0 && Exp >= 100)// 몬스터 처치후 경험치가 100 이면 Levelup
-                        {
-                            Console.WriteLine("레벨업!");
-                            Console.WriteLine("레벨업으로 인해 체력이 100 회복");
-                            Levelup();
-                            Hp += 100;
-                            Exp = 0; // 경험치를 0으로 초기화
-                        }
-                        break;
-                    }*/
 
-/*                    if (Hp <= 0)//죽음
-                    {
-                        Console.WriteLine("당신은 사망하였습니다. 게임을 종료합니다.");
-                        PrintDeath();
-                        coin = 5000;
-                        break;
-                    }*/
                     else if (posY == 2) // 주인공 정보보기
                     {
                         PrintPlayerStat();
